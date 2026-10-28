@@ -14,7 +14,7 @@ from ..deps import Db, MaybeUser
 router = APIRouter(tags=["catalog"])
 
 #: 品类。顺序即展示顺序：关节电机是重点，放最前。
-#: 机械结构 / 电池 / 线束 目前**没有收录** —— 不是漏了，是没有可信来源，
+#: 电池 / 线束 目前**没有收录** —— 不是漏了，是没有可信来源，
 #: 宁可空着也不编（见 README 的口径纪律）。
 CATEGORY_LABELS = {
     "actuator": "关节电机",
@@ -30,14 +30,19 @@ CATEGORY_LABELS = {
 }
 
 #: 还没有数据的品类：前端要显示「待补充」，不能当成 500 或空列表了事
-#: 目前确实没有可信来源的品类。归档导入后 lidar/camera/imu/module 已经有数据，
-#: 只剩这三类还是空的 —— 它们需要机械图纸/电芯规格书/线束表，商品页给不了。
-EMPTY_CATEGORIES = {"structure", "battery", "wiring"}
+#: 电芯规格书与线束表商品页给不了，没找到可信来源前保持为空。
+EMPTY_CATEGORIES = {"battery", "wiring"}
 SUBTYPE_LABELS = {
     "qdd": "准直驱 QDD", "planetary": "行星减速", "harmonic": "谐波减速",
     "direct": "直驱", "sbc": "单板计算机", "mcu": "MCU / 驱动器",
+    "som": "核心模组", "servo_driver": "FOC 伺服驱动器",
     "bridge": "调试桥", "imu": "IMU", "camera": "深度相机",
     "lidar": "激光雷达", "force": "力 / 触觉", "encoder": "编码器",
+    # 整机形态：先按机器人外形分，再细分腿构型
+    "quadruped": "四足", "wheeled_quadruped": "四轮足", "humanoid": "人形",
+    "biped": "双足", "wheeled_biped": "双轮足",
+    "quadruped_inward_knee": "四足 · 内膝肘",
+    "wheeled_quadruped_inward_knee": "四轮足 · 内膝肘",
 }
 
 #: 允许排序的字段 → JSON 路径。白名单，用户输入不进 SQL。

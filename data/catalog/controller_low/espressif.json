@@ -1,0 +1,43 @@
+[
+ {
+  "id": "cont-espressif-esp32-s3-devkitc-1-n8r8",
+  "category": "controller_low",
+  "subtype": "mcu",
+  "vendor": "乐鑫 Espressif",
+  "vendor_cn": "乐鑫科技",
+  "model": "ESP32-S3-DevKitC-1-N8R8",
+  "title": "乐鑫 ESP32-S3-DevKitC-1-N8R8",
+  "url": "https://docs.espressif.com/projects/esp-dev-kits/zh_CN/latest/esp32s3/esp32-s3-devkitc-1/user_guide_v1.1.html",
+  "source_tier": "A",
+  "verified": 1,
+  "last_checked": "2026-10-28",
+  "price_cny": 99,
+  "specs": {
+   "mcu": "ESP32-S3-WROOM-1-N8R8 (dual-core Xtensa LX7)",
+   "clock_mhz": 240,
+   "ram_kb": 512,
+   "flash_kb": 8192,
+   "foc_axes": null,
+   "canfd": false,
+   "can": 1,
+   "current_loop_khz": null,
+   "torque_mode": null,
+   "voltage_in_V": 5,
+   "voltage_max_V": 5,
+   "comm_upper": "USB-C (UART/JTAG) / UART / SPI / I2C / TWAI",
+   "size_mm": null,
+   "weight_g": null,
+   "image_url": "/parts/esp32-s3-devkitc-1.jpg",
+   "image_source": "乐鑫官方 ESP32-S3-DevKitC-1 文档页开发板产品图",
+   "doc_url": "https://docs.espressif.com/projects/esp-dev-kits/zh_CN/latest/esp32s3/esp32-s3-devkitc-1/user_guide_v1.1.html",
+   "doc_pdf": null,
+   "repo_urls": [
+    "https://github.com/espressif/esp-idf",
+    "https://github.com/espressif/arduino-esp32"
+   ]
+  },
+  "notes": "N8R8 = 8MB Flash + 8MB Octal PSRAM（ESP32-S3-WROOM-1-N8R8）；双核 Xtensa LX7 240MHz、512KB SRAM；2.4GHz Wi-Fi + Bluetooth 5 (LE)；USB-C 供电 5V，板载 USB-to-UART 与原生 USB 两个口；1× TWAI（CAN 2.0）控制器，需外接 CAN 收发器（can=1，canfd=false）。价格：乐鑫官方面板页样品参考价 ¥99（2026-10），DigiKey 中国 ¥109.99（含税）。",
+  "origin": "乐鑫官方 DevKits 页面 + ESP32-S3-DevKitC-1 用户指南 v1.1 + 模组数据手册核对（2026-10-28）",
+  "search": "espressif esp32-s3-devkitc-1 n8r8 乐鑫 mcu"
+ }
+]

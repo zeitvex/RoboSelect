@@ -1,0 +1,39 @@
+[
+ {
+  "id": "sens-bosch-bmi088",
+  "category": "imu",
+  "subtype": "imu_chip",
+  "subtype_label": "IMU 芯片",
+  "vendor": "Bosch Sensortec",
+  "vendor_cn": "博世传感",
+  "model": "BMI088",
+  "title": "博世 BMI088",
+  "url": "https://www.bosch-sensortec.com/products/motion-sensors/imus/bmi088/",
+  "source_tier": "A",
+  "verified": 1,
+  "last_checked": "2026-10-28",
+  "price_cny": null,
+  "specs": {
+   "gyro_range_dps": 2000,
+   "accel_range_g": 24,
+   "odr_hz": 2000,
+   "noise": "0.014 °/s/√Hz；175 µg/√Hz",
+   "iface": "SPI、I²C",
+   "voltage_V": 3.3,
+   "voltage_range_V": "2.4–3.6",
+   "power_w": 0.017,
+   "temp_range_C": "-40~85",
+   "size_mm": "3×4.5×0.95",
+   "weight_g": null,
+   "resolution": "16-bit",
+   "image_url": "/parts/bosch-bmi088.jpg",
+   "image_source": "Bosch Sensortec BMI088 产品页产品渲染图",
+   "doc_url": "https://www.bosch-sensortec.com/products/motion-sensors/imus/bmi088/",
+   "doc_pdf": "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmi088-ds001.pdf",
+   "repo_urls": []
+  },
+  "notes": "6 轴（3 轴陀螺 + 3 轴加速度计），陀螺量程 ±125/250/500/1000/2000 °/s，加速度计量程 ±3/6/12/24 g；ODR 12.5 Hz–2 kHz；VDD 2.4–3.6 V，VDDIO 1.2–3.6 V；全速运行 5.15 mA（按 3.3 V 折算约 0.017 W）。博世官方定位为无人机与机器人应用，四足/人形机器人姿态估计常用。官网未公开单价，价格随渠道与批次波动。",
+  "origin": "Bosch Sensortec BMI088 产品页 + BST-BMI088-DS001 数据手册核对（2026-10-28）",
+  "search": "bosch bmi088 博世 6轴 imu 陀螺仪 加速度计 spi i2c 四足 cyberdog"
+ }
+]

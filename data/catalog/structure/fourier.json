@@ -1,0 +1,47 @@
+[
+ {
+  "id": "struct-fourier-gr2",
+  "category": "structure",
+  "subtype": "humanoid",
+  "subtype_label": "人形",
+  "vendor": "傅利叶 Fourier",
+  "vendor_cn": "上海傅利叶智能科技",
+  "model": "GR-2",
+  "title": "傅利叶 GR-2",
+  "url": "https://www.fftai.com/grx/about",
+  "source_tier": "A",
+  "verified": 1,
+  "last_checked": "2026-10-28",
+  "price_cny": null,
+  "specs": {
+   "dof": 53,
+   "mass_kg": null,
+   "payload_kg": 3,
+   "speed_max_mps": 1.39,
+   "size_mm": null,
+   "climb_height_mm": null,
+   "climb_angle_deg": null,
+   "battery": null,
+   "endurance_h": 2,
+   "voltage_V": null,
+   "voltage_range_V": null,
+   "iface": null,
+   "compute": null,
+   "sensors": null,
+   "image_url": "/parts/fourier-gr2.jpg",
+   "image_source": "傅利叶官网 GRx 系列页 GR-2 产品图（fftai.com/images/grx/gr2.jpg）",
+   "doc_url": null,
+   "doc_pdf": "https://www.fftai.com/pdf/a38248c9edb2fe61a88efa1f05718607.pdf",
+   "repo_urls": [
+    "https://github.com/FFTAI/Wiki-GRx-Models",
+    "https://github.com/FFTAI/Wiki-GRx-Deploy"
+   ],
+   "urdf_urls": [
+    "https://github.com/FFTAI/Wiki-GRx-Models/tree/master/GRX/GR2/GR2v3.0.1/urdf"
+   ]
+  },
+  "notes": "GR-2 为傅利叶第二代通用人形：53 自由度、单臂负载 3 kg、行走速度 5 km/h（≈1.39 m/s）、续航约 2 h、最大关节扭矩 436 N·m。官方宣传册未给身高与整机重量（媒体常见的 1.75 m / 63 kg 未获官方确认，故留空）；官网 GR-2 详情页已下线，仅 GRx 系列介绍页可访问。价格未公开，price_cny 留空。",
+  "origin": "傅利叶官网 GRx 系列页 + GR-2 官方宣传册 PDF + Wiki-GRx-Models URDF 核对（2026-10-28）",
+  "search": "fourier 傅利叶 gr-2 人形机器人 humanoid 53自由度 436nm"
+ }
+]

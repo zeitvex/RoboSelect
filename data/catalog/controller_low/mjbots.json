@@ -1,0 +1,42 @@
+[
+ {
+  "id": "cont-mjbots-moteus-r4-11",
+  "category": "controller_low",
+  "subtype": "servo_driver",
+  "vendor": "mjbots",
+  "vendor_cn": "mjbots",
+  "model": "moteus r4.11",
+  "title": "mjbots moteus r4.11",
+  "url": "https://mjbots.com/products/moteus-r4-11",
+  "source_tier": "A",
+  "verified": 1,
+  "last_checked": "2026-10-28",
+  "price_cny": 670,
+  "specs": {
+   "mcu": "STM32G4 (Cortex-M4)",
+   "clock_mhz": 170,
+   "ram_kb": null,
+   "flash_kb": null,
+   "foc_axes": 1,
+   "canfd": true,
+   "can": 1,
+   "current_loop_khz": 30,
+   "torque_mode": true,
+   "voltage_in_V": 24,
+   "voltage_max_V": 44,
+   "comm_upper": "CAN-FD",
+   "size_mm": "46×53",
+   "weight_g": 14.2,
+   "image_url": "/parts/mjbots-moteus-r4-11.jpg",
+   "image_source": "mjbots 官方商店 moteus r4.11 产品图",
+   "doc_url": "https://mjbots.github.io/moteus/",
+   "doc_pdf": null,
+   "repo_urls": [
+    "https://github.com/mjbots/moteus"
+   ]
+  },
+  "notes": "r4.11 单轴 FOC 驱动器；10–44V、峰值 100A、持续 10A（无散热）/22A（带散热）、30V 下约 900W；控制环 15–30kHz；CAN-FD 5Mbps；板载磁编码器，另支持 SPI/ABZ 外部编码器；46×53mm、14.2g。价格 $94（单件）/ $55（10–99）/ $51（100+），2026-10 官方商店，单件约 ¥670。",
+  "origin": "mjbots 官方商店 + moteus 文档核对（2026-10-28）",
+  "search": "mjbots moteus r4.11 foc canfd servo driver"
+ }
+]

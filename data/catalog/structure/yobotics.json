@@ -1,0 +1,42 @@
+[
+ {
+  "id": "struct-yobotics-y30",
+  "category": "structure",
+  "subtype": "quadruped",
+  "subtype_label": "四足",
+  "vendor": "优宝特 YOBOTICS",
+  "vendor_cn": "优宝特",
+  "model": "Y30",
+  "title": "优宝特 Y30",
+  "url": "https://www.yobotics.cn/cpzx/szjqrxl/",
+  "source_tier": "A",
+  "verified": 1,
+  "last_checked": "2026-10-28",
+  "price_cny": null,
+  "specs": {
+   "dof": null,
+   "mass_kg": 60,
+   "payload_kg": 80,
+   "speed_max_mps": 4,
+   "size_mm": "1100×475×610（站立）；930×450×370（折叠）",
+   "climb_height_mm": 300,
+   "climb_angle_deg": 40,
+   "battery": "25 Ah",
+   "endurance_h": ">5 h（空载）/ >2.5 h（负载）",
+   "voltage_V": null,
+   "voltage_range_V": null,
+   "iface": null,
+   "compute": "UpBoard ×1：Intel Atom x5-Z8350（2×32 GB）",
+   "sensors": "选配 3D 激光雷达 ×1、深度相机 ×1",
+   "image_url": "/parts/yobotics-y30.png",
+   "image_source": "优宝特官网四足机器人系列页 Y30 产品图（yobotics.cn/cpzx/szjqrxl/）",
+   "doc_url": "https://www.yobotics.cn/fuwuzhichi/",
+   "doc_pdf": null,
+   "repo_urls": [],
+   "urdf_urls": []
+  },
+  "notes": "官方参数表：站立负载最大 150 kg、行走负载最大 80 kg，payload_kg 取行走值 80；续航空载持续行走 >5 h、有效负载作业 >2.5 h；攀爬台阶高度 30 cm、爬坡角度 40°；防护 IP54；工作温度 -25~50 ℃；重复定位精度 ≤±6 cm。官网 Y30 参数表未列自由度与对外接口，两项留空；电源适配器输出 29.4V 3A，但未给电池额定电压。选配 3D 激光雷达与深度相机，价格需询价。",
+  "origin": "优宝特官网四足机器人系列页 Y30 参数表核对（2026-10-28）",
+  "search": "yobotics 优宝特 y30 四足机器人 机器狗 quadruped 60kg"
+ }
+]

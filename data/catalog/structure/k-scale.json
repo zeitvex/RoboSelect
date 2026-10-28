@@ -1,0 +1,45 @@
+[
+ {
+  "id": "struct-kscale-stompy",
+  "category": "structure",
+  "subtype": "humanoid",
+  "subtype_label": "人形",
+  "vendor": "K-Scale Labs",
+  "vendor_cn": null,
+  "model": "Stompy",
+  "title": "K-Scale Labs Stompy",
+  "url": "https://www.ycombinator.com/companies/k-scale-labs",
+  "source_tier": "A",
+  "verified": 1,
+  "last_checked": "2026-10-28",
+  "price_cny": null,
+  "specs": {
+   "dof": null,
+   "mass_kg": null,
+   "payload_kg": null,
+   "speed_max_mps": null,
+   "size_mm": "1220（高，4 ft）",
+   "climb_height_mm": null,
+   "climb_angle_deg": null,
+   "battery": "48 V 15 Ah（可热插拔）",
+   "endurance_h": ">1 h",
+   "voltage_V": 48,
+   "voltage_range_V": null,
+   "iface": null,
+   "compute": null,
+   "sensors": null,
+   "image_url": "/parts/kscale-stompy.png",
+   "image_source": "K-Scale Labs 官网 Stompy 产品图（kscale.dev/images/stompy.png，站点已下线，经 Wayback Machine 存档）",
+   "doc_url": null,
+   "doc_pdf": null,
+   "repo_urls": [
+    "https://github.com/kscalelabs/gym-stompy",
+    "https://github.com/kscalelabs/ksim_wasm"
+   ],
+   "urdf_urls": []
+  },
+  "notes": "YC 时期公布的参数：4 英尺（约 1.22 m）高，准直驱关节 6:1–8:1 减速、标称扭矩 3–12 N·m，可热插拔 48 V 15 Ah 电池续航 1 h 以上，结构件用 PAHT-CF 打印（单件可放进 256×256 mm 打印床），BOM 低于 US$10,000。官方从未公布整机自由度、重量与行走速度，均留空。K-Scale Labs 官网 kscale.dev 已下线，资料以 YC 公司与 Stompy 发布帖为准；GitHub 只有上半身 MJCF（gym-stompy / ksim_wasm），没有整机 URDF，urdf_urls 留空。",
+  "origin": "Y Combinator K-Scale Labs 页面与 Stompy 发布帖 + Wayback 存档官网图核对（2026-10-28）",
+  "search": "k-scale labs stompy 人形机器人 humanoid 开源 5000美元 48v"
+ }
+]

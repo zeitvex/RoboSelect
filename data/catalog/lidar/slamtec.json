@@ -1,0 +1,49 @@
+[
+ {
+  "id": "sens-slamtec-rplidar-s2",
+  "category": "lidar",
+  "subtype": "lidar",
+  "subtype_label": "激光雷达",
+  "vendor": "Slamtec",
+  "vendor_cn": "思岚科技",
+  "model": "RPLIDAR S2",
+  "title": "思岚 RPLIDAR S2",
+  "url": "https://www.slamtec.com/cn/s2",
+  "source_tier": "A",
+  "verified": 1,
+  "last_checked": "2026-10-28",
+  "price_cny": 2500,
+  "specs": {
+   "gyro_range_dps": null,
+   "accel_range_g": null,
+   "odr_hz": null,
+   "iface": "UART（1 Mbps）",
+   "noise": null,
+   "resolution": "0.1125°",
+   "depth_range_m": null,
+   "fps": 10,
+   "fov": "360°（单线）",
+   "range_m": 30,
+   "points_per_s": 32000,
+   "channel": 1,
+   "bits": null,
+   "absolute": "±30 mm",
+   "temp_range_C": "-10~50",
+   "size_mm": "77×77×38.5",
+   "weight_g": 190,
+   "power_w": 2,
+   "voltage_V": 5,
+   "ip": "IP65",
+   "image_url": "/parts/slamtec-rplidar-s2.webp",
+   "image_source": "思岚科技官网 RPLIDAR S2 产品图",
+   "doc_url": "https://www.slamtec.com/cn/s2",
+   "doc_pdf": null,
+   "repo_urls": [
+    "https://github.com/Slamtec/rplidar_sdk"
+   ]
+  },
+  "notes": "单线 DTOF，30 m@90% 白 / 10 m@10% 黑，盲区 0.05 m；32,000 采样/s、10 Hz、0.1125°、±30 mm；IP65，UART 1 Mbps，5 V/400 mA（约 2 W）。只给 2D 平面，做地形要配合俯仰机构或多线雷达。DFRobot ¥2500（2026-10）；同系列 S2L 约 ¥1900、S2P 量程 50 m、S2E 是以太网版约 ¥3000。",
+  "origin": "思岚科技官网 RPLIDAR S2 规格页 + DFRobot 商品页核对（2026-10-28）",
+  "search": "rplidar s2 思岚 单线 激光雷达 30m ip65 2d"
+ }
+]

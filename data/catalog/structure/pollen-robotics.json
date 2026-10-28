@@ -1,0 +1,47 @@
+[
+ {
+  "id": "struct-pollen-microduck",
+  "category": "structure",
+  "subtype": "biped",
+  "subtype_label": "双足",
+  "vendor": "Pollen Robotics",
+  "vendor_cn": "Pollen Robotics（法国）",
+  "model": "Microduck",
+  "title": "Pollen Robotics Microduck",
+  "url": "https://pollen-robotics.com/microduck/",
+  "source_tier": "A",
+  "verified": 1,
+  "last_checked": "2026-10-28",
+  "price_cny": null,
+  "specs": {
+   "dof": 14,
+   "mass_kg": 0.8,
+   "payload_kg": null,
+   "speed_max_mps": null,
+   "size_mm": "250（高）",
+   "climb_height_mm": null,
+   "climb_angle_deg": null,
+   "battery": null,
+   "endurance_h": null,
+   "voltage_V": null,
+   "voltage_range_V": null,
+   "iface": "USB-C 充电；游戏手柄遥控",
+   "compute": "板载策略推理，控制频率 50 Hz",
+   "sensors": "相机、激光雷达、双 IMU",
+   "image_url": "/parts/pollen-microduck.jpg",
+   "image_source": "Pollen Robotics 官网 Microduck 页分享图（pollen-robotics.com/assets/og/og-microduck-squad-v2.jpg）",
+   "doc_url": null,
+   "doc_pdf": null,
+   "repo_urls": [
+    "https://github.com/pollen-robotics/microduck",
+    "https://github.com/pollen-robotics/microduck_rl"
+   ],
+   "urdf_urls": [
+    "https://github.com/pollen-robotics/microduck_rl/tree/main/src/mjlab_microduck/robot/microduck"
+   ]
+  },
+  "notes": "Pollen Robotics 的小型开源双足：14 自由度（每腿 5 + 颈部 1 + 头部 3，按官方 MJCF 执行器数）、约 0.8 kg、高 25 cm，随机附带若干已训练动作，策略在机载 50 Hz 运行，传感器为相机 + 激光雷达 + 双 IMU，配套游戏手柄与 USB-C 充电。官网定价 US$399（2026-10-28 的 introductory price，税前不含运费，可能变化），price_cny 未折算故留空。官方只发布 MuJoCo MJCF（microduck_rl），没有 URDF；负载、速度、电池容量与续航未公开，均留空。",
+  "origin": "Pollen Robotics 官网 Microduck 产品页 + 官方 GitHub 仓库与 MJCF 关节数核对（2026-10-28）",
+  "search": "pollen robotics microduck 双足 开源 biped 14自由度 399美元"
+ }
+]

@@ -1,0 +1,47 @@
+[
+ {
+  "id": "struct-roboparty-roboto01",
+  "category": "structure",
+  "subtype": "humanoid",
+  "subtype_label": "人形",
+  "vendor": "RoboParty",
+  "vendor_cn": null,
+  "model": "ROBOTO 01（RP1）",
+  "title": "RoboParty ROBOTO 01",
+  "url": "https://roboparty.com/products/RP1",
+  "source_tier": "A",
+  "verified": 1,
+  "last_checked": "2026-10-28",
+  "price_cny": null,
+  "specs": {
+   "dof": 24,
+   "mass_kg": 39,
+   "payload_kg": 3,
+   "speed_max_mps": 4,
+   "size_mm": "1350×450×200",
+   "climb_height_mm": 50,
+   "climb_angle_deg": 30,
+   "battery": "10 Ah",
+   "endurance_h": 3,
+   "voltage_V": null,
+   "voltage_range_V": null,
+   "iface": "Wi-Fi 6、蓝牙 5.2、4G；ROS 2",
+   "compute": "NVIDIA Jetson Orin NX（16 GB）",
+   "sensors": "可换头部：运控 / 交互 / 数采 / 感知头；感知头为 Intel D435i 深度相机 + 3D 激光雷达，其余头配单目或双目 RGB 相机",
+   "image_url": "/parts/roboparty-rp1.webp",
+   "image_source": "RoboParty 官网 ROBOTO 01（RP1）产品图（assets.roboparty.com/web/images/products/rp1/model-portraits-v1/rp1.webp）",
+   "doc_url": "https://roboparty.com/documents/roboto-01",
+   "doc_pdf": null,
+   "repo_urls": [
+    "https://github.com/Roboparty/RP1",
+    "https://github.com/Roboparty/RP1_description"
+   ],
+   "urdf_urls": [
+    "https://github.com/Roboparty/RP1_description/tree/master/urdf"
+   ]
+  },
+  "notes": "官网现以 ROBOTO 01 展示该机型（原型号 RP1，GitHub 仓库仍沿用 RP1 命名），分开源版与开源版 PRO：整机 24 / 30 自由度、约 39 / 41 kg、1350×450×200 mm，行走速度约 4 m/s、爬坡 30°、负载 3 kg，10 Ah 电池续航约 3 h，关节模组 ROMOMO 外径 100 mm、峰值扭矩 160 N·m。本条记开源版；RP1_description 的 URDF 为 24 个转动关节。头部可换为运控 / 交互 / 数采 / 感知四种配置，算力为 Orin NX 16 GB，连接为 Wi-Fi 6 / 蓝牙 5.2 / 4G，软件栈含 ROS 2、SDK 与仿真训练代码。官网未公开整机售价，price_cny 留空。另有独立机型 ROBOTO Origin（23 自由度、1.25 m、34 kg），不在本条内。",
+  "origin": "RoboParty 官网 ROBOTO 01（/products/RP1）参数表 + RP1_description URDF 关节数核对（2026-10-28）",
+  "search": "roboparty roboto 01 rp1 人形机器人 开源 humanoid 24自由度"
+ }
+]

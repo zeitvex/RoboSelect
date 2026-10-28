@@ -1,0 +1,47 @@
+[
+ {
+  "id": "struct-odri-solo12",
+  "category": "structure",
+  "subtype": "quadruped",
+  "subtype_label": "四足",
+  "vendor": "ODRI",
+  "vendor_cn": "Open Dynamic Robot Initiative",
+  "model": "Solo 12",
+  "title": "ODRI Solo 12",
+  "url": "https://github.com/open-dynamic-robot-initiative/open_robot_actuator_hardware/tree/master/mechanics/quadruped_robot_12dof_v1",
+  "source_tier": "A",
+  "verified": 1,
+  "last_checked": "2026-10-28",
+  "price_cny": null,
+  "specs": {
+   "dof": 12,
+   "mass_kg": 2.5,
+   "payload_kg": null,
+   "speed_max_mps": null,
+   "size_mm": null,
+   "climb_height_mm": null,
+   "climb_angle_deg": null,
+   "battery": null,
+   "endurance_h": null,
+   "voltage_V": null,
+   "voltage_range_V": null,
+   "iface": "以太网；机身引出供电线（v1 无板载电池）",
+   "compute": "Master Board + 12× Micro Driver Board",
+   "sensors": "Lord Microstrain 3DM-CX5-25 IMU",
+   "image_url": "/parts/odri-solo12.jpg",
+   "image_source": "ODRI 官方硬件仓库 README 产品图（open_robot_actuator_hardware/mechanics/quadruped_robot_12dof_v1）",
+   "doc_url": "https://github.com/open-dynamic-robot-initiative/open-dynamic-robot-initiative.github.io/wiki",
+   "doc_pdf": null,
+   "repo_urls": [
+    "https://github.com/open-dynamic-robot-initiative/robot_properties_solo",
+    "https://github.com/open-dynamic-robot-initiative/robot_interfaces_solo"
+   ],
+   "urdf_urls": [
+    "https://github.com/open-dynamic-robot-initiative/robot_properties_solo/tree/master/src/robot_properties_solo/resources/xacro"
+   ]
+  },
+  "notes": "开源力矩控制四足，12 自由度、整机 2.5 kg（官方硬件 README 标注）。v1 没有板载电池与无线通信，需要外接电源和以太网；v1.1 才加板载电池与无线。官方仓库只提供 xacro 模板（solo12.urdf.xacro + leg.xacro），由 robot_properties_solo 生成 URDF，没有预生成文件。官方未公布最高速度、负载、整机尺寸与续航，均留空；PAL Robotics 曾代理整机套件，官网已标注销售停止。",
+  "origin": "ODRI 官方硬件仓库 README + PAL Robotics Solo12 页面核对（2026-10-28）",
+  "search": "odri solo12 四足 开源 quadruped 12dof 2.5kg 力矩控制"
+ }
+]

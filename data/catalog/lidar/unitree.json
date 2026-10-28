@@ -1,0 +1,49 @@
+[
+ {
+  "id": "sens-unitree-l2",
+  "category": "lidar",
+  "subtype": "lidar",
+  "subtype_label": "激光雷达",
+  "vendor": "Unitree",
+  "vendor_cn": "宇树",
+  "model": "L2",
+  "title": "宇树 Unitree 4D LiDAR L2",
+  "url": "https://www.unitree.com/cn/L2",
+  "source_tier": "A",
+  "verified": 1,
+  "last_checked": "2026-10-28",
+  "price_cny": 1799,
+  "specs": {
+   "gyro_range_dps": null,
+   "accel_range_g": null,
+   "odr_hz": null,
+   "iface": "以太网 / 串口",
+   "noise": null,
+   "resolution": null,
+   "depth_range_m": null,
+   "fps": 10,
+   "fov": "360°×96°",
+   "range_m": 30,
+   "points_per_s": 64000,
+   "channel": null,
+   "bits": null,
+   "absolute": "±2 cm",
+   "temp_range_C": "-10~50",
+   "size_mm": "75×75×65",
+   "weight_g": 230,
+   "power_w": 10,
+   "voltage_V": 12,
+   "ip": null,
+   "image_url": "/parts/unitree-l2.jpg",
+   "image_source": "宇树官方商城 L2 产品图",
+   "doc_url": "https://support.unitree.com/home/zh/developer",
+   "doc_pdf": null,
+   "repo_urls": [
+    "https://github.com/unitreerobotics/unilidar_sdk2"
+   ]
+  },
+  "notes": "非重复扫描，360°×96°，30 m@90%、盲区 0.05 m；有效点频 64,000 pts/s（采样 128,000 pts/s），精度 2 cm；内置 3 轴 IMU，官方提供只用 L2 + IMU 的 Point-LIO 开源 SLAM 方案。10 W（低温自加热峰值 13 W）、12 V、230 g。官网 ¥1799（2026-10），海外 $419。性价比高，但垂直 96° 加上非重复扫描意味着近距离点云比机械式稀，建图算法要适配。",
+  "origin": "宇树官网 L2 产品页 + 宇树文档中心核对（2026-10-28）",
+  "search": "unitree l2 4d 激光雷达 宇树 360 96 非重复扫描 point-lio"
+ }
+]

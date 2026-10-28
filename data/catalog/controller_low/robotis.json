@@ -1,0 +1,43 @@
+[
+ {
+  "id": "cont-robotis-opencr-1-0",
+  "category": "controller_low",
+  "subtype": "mcu",
+  "vendor": "ROBOTIS",
+  "vendor_cn": "ROBOTIS",
+  "model": "OpenCR 1.0",
+  "title": "ROBOTIS OpenCR 1.0",
+  "url": "https://emanual.robotis.com/docs/en/parts/controller/opencr10/",
+  "source_tier": "A",
+  "verified": 1,
+  "last_checked": "2026-10-28",
+  "price_cny": 1750,
+  "specs": {
+   "mcu": "STM32F746ZGT6 (Cortex-M7)",
+   "clock_mhz": 216,
+   "ram_kb": 320,
+   "flash_kb": 1024,
+   "foc_axes": null,
+   "canfd": false,
+   "can": 3,
+   "current_loop_khz": null,
+   "torque_mode": null,
+   "voltage_in_V": 12,
+   "voltage_max_V": 24,
+   "comm_upper": "USB / UART / CAN / RS485 / SPI / I2C",
+   "size_mm": "105×75",
+   "weight_g": 60,
+   "image_url": "/parts/robotis-opencr-1-0.png",
+   "image_source": "ROBOTIS 官方商店 OpenCR 1.0 产品图",
+   "doc_url": "https://emanual.robotis.com/docs/en/parts/controller/opencr10/",
+   "doc_pdf": null,
+   "repo_urls": [
+    "https://github.com/ROBOTIS-GIT/OpenCR",
+    "https://github.com/ROBOTIS-GIT/OpenCR-Hardware"
+   ]
+  },
+  "notes": "STM32F746ZGT6（216MHz、1MB Flash、320KB SRAM）；3× CAN、3× UART、RS485、SPI/I2C；5–24V 输入；105×75mm、60g；TurtleBot3 常用主控。注意：这是主控板，不含 FOC 功率级；驱动 Dynamixel 走 TTL/RS485，直流电机需外接驱动器。价格 $247.14（ROBOTIS US 商店，2026-10），约 ¥1750。",
+  "origin": "ROBOTIS e-Manual OpenCR 1.0 + 官方商店价格核对（2026-10-28）",
+  "search": "robotis opencr 1.0 stm32f746 turtlebot3 can"
+ }
+]

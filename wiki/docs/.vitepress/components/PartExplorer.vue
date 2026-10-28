@@ -65,6 +65,7 @@ const fail = ref('')
 const q = ref('')
 const cat = ref('actuator')
 const vendor = ref('')
+const subtype = ref('')
 const sort = ref<'rating' | 'peak' | 'armature' | 'mass' | 'price' | 'vendor'>('peak')
 const order = ref<'desc' | 'asc'>('desc')
 const picked = ref<Part[]>([])
@@ -92,6 +93,18 @@ const SORTS = [
   { v: 'vendor', t: '品牌' },
 ] as const
 
+//: 机械结构按整机形态分，不按品牌。顺序与 wiki 生成器、后端 facet 一致；
+//: 0 件的形态也列出来 —— 分类本身是结论，缺的例子要看得见。
+const STRUCT_SUBTYPES = [
+  { v: 'quadruped', t: '四足' },
+  { v: 'wheeled_quadruped', t: '四轮足' },
+  { v: 'humanoid', t: '人形' },
+  { v: 'biped', t: '双足' },
+  { v: 'wheeled_biped', t: '双轮足' },
+  { v: 'quadruped_inward_knee', t: '四足 · 内膝肘' },
+  { v: 'wheeled_quadruped_inward_knee', t: '四轮足 · 内膝肘' },
+]
+
 onMounted(async () => {
   try {
     // no-cache = 每次用 ETag 重新验证，不是禁用缓存。
@@ -107,6 +120,8 @@ onMounted(async () => {
 })
 
 const catCount = (v: string) => all.value.filter(p => p.category === v).length
+const subCount = (v: string) =>
+  all.value.filter(p => p.category === cat.value && p.subtype === v).length
 const vendors = computed(() =>
   [...new Set(all.value.filter(p => p.category === cat.value).map(p => p.vendor))].sort())
 
@@ -124,6 +139,7 @@ const rows = computed(() => {
   let out = all.value.filter(
     p => p.category === cat.value
       && (!vendor.value || p.vendor === vendor.value)
+      && (!subtype.value || p.subtype === subtype.value)
       && (!q.value || `${p.model} ${p.vendor} ${p.subtypeLabel}`
         .toLowerCase().includes(q.value.toLowerCase())),
   )
@@ -137,6 +153,14 @@ const rows = computed(() => {
     return order.value === 'desc' ? -cmp : cmp
   })
   return out
+})
+
+const emptyText = computed(() => {
+  if (subtype.value && !subCount(subtype.value)) {
+    const s = STRUCT_SUBTYPES.find(x => x.v === subtype.value)
+    return `${s?.t ?? subtype.value} 暂无收录 —— 没有可信来源，宁缺不编`
+  }
+  return catCount(cat.value) ? '没有符合条件的部件' : '这一类还没有收录 —— 没有可信来源，宁缺不编'
 })
 
 function num(v: any, d = 3): string {
@@ -212,7 +236,7 @@ const COMPARE_FIELDS: { t: string; f: (p: Part) => string }[] = [
         <button v-for="c in CATS" :key="c.v"
                 :class="['pd-chip', cat === c.v ? 'on' : '', catCount(c.v) ? '' : 'empty']"
                 :title="catCount(c.v) ? `${catCount(c.v)} 件` : '还没有收录（没有可信来源，不编数据）'"
-                @click="cat = c.v; vendor = ''; q = ''">
+                @click="cat = c.v; vendor = ''; subtype = ''; q = ''">
           {{ c.t }}<span class="pd-n">{{ catCount(c.v) || '—' }}</span>
         </button>
       </div>
@@ -227,9 +251,19 @@ const COMPARE_FIELDS: { t: string; f: (p: Part) => string }[] = [
           {{ order === 'desc' ? '↓ 降序' : '↑ 升序' }}
         </button>
         <span class="pd-sep" />
-        <button v-for="v in vendors" :key="v"
-                :class="['pd-chip', 'sm', vendor === v ? 'on' : '']"
-                @click="vendor = vendor === v ? '' : v">{{ v }}</button>
+        <template v-if="cat === 'structure'">
+          <button v-for="s in STRUCT_SUBTYPES" :key="s.v"
+                  :class="['pd-chip', 'sm', subtype === s.v ? 'on' : '', subCount(s.v) ? '' : 'empty']"
+                  :title="subCount(s.v) ? `${s.t} · ${subCount(s.v)} 件` : `${s.t}：暂无收录（没有可信来源，不编数据）`"
+                  @click="subtype = subtype === s.v ? '' : s.v">
+            {{ s.t }}<span class="pd-n">{{ subCount(s.v) || '—' }}</span>
+          </button>
+        </template>
+        <template v-else>
+          <button v-for="v in vendors" :key="v"
+                  :class="['pd-chip', 'sm', vendor === v ? 'on' : '']"
+                  @click="vendor = vendor === v ? '' : v">{{ v }}</button>
+        </template>
         <span class="pd-count">{{ rows.length }} 件</span>
       </div>
 
@@ -301,7 +335,7 @@ const COMPARE_FIELDS: { t: string; f: (p: Part) => string }[] = [
       </div>
 
       <p v-if="!rows.length" class="pd-muted" style="padding:2rem 0;text-align:center">
-        {{ catCount(cat) ? '没有符合条件的部件' : '这一类还没有收录 —— 没有可信来源，宁缺不编' }}
+        {{ emptyText }}
       </p>
 
       <!-- 全部参数 -->

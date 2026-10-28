@@ -1,0 +1,43 @@
+[
+ {
+  "id": "cont-arduino-uno-r3",
+  "category": "controller_low",
+  "subtype": "mcu",
+  "vendor": "Arduino",
+  "vendor_cn": "Arduino",
+  "model": "Uno Rev3",
+  "title": "Arduino Uno Rev3",
+  "url": "https://docs.arduino.cc/hardware/uno-rev3/",
+  "source_tier": "A",
+  "verified": 1,
+  "last_checked": "2026-10-28",
+  "price_cny": 169,
+  "specs": {
+   "mcu": "ATmega328P (8-bit AVR)",
+   "clock_mhz": 16,
+   "ram_kb": 2,
+   "flash_kb": 32,
+   "foc_axes": null,
+   "canfd": false,
+   "can": 0,
+   "current_loop_khz": null,
+   "torque_mode": null,
+   "voltage_in_V": 5,
+   "voltage_max_V": 12,
+   "comm_upper": "USB-B (ATmega16U2) / UART / SPI / I2C",
+   "size_mm": "68.6×53.4",
+   "weight_g": 25,
+   "image_url": "/parts/arduino-uno-r3.jpg",
+   "image_source": "Arduino 官方商店 Arduino Uno Rev3（A000066）产品主图",
+   "doc_url": "https://docs.arduino.cc/hardware/uno-rev3/",
+   "doc_pdf": "https://docs.arduino.cc/resources/datasheets/A000066-datasheet.pdf",
+   "repo_urls": [
+    "https://github.com/arduino/ArduinoCore-avr",
+    "https://github.com/arduino/Arduino"
+   ]
+  },
+  "notes": "ATmega328P 16MHz、32KB Flash（0.5KB 引导）、2KB SRAM、1KB EEPROM；14× 数字 I/O（6× PWM）、6× 模拟输入；5V 工作，VIN 推荐 7–12V（极限 6–20V）；USB-B 接口 + ATmega16U2 USB 转串口；无 CAN（can=0）。参考价：DFRobot（Arduino 官方授权大陆代理）¥169（2026-10）；Arduino 官方商店 €29.30。官方尺寸 68.6×53.4mm、25g（DFRobot 标注 75×55×15mm 为含包装/接口尺寸）。适合教学与低实时性外设控制，不适合做 FOC 主控。",
+  "origin": "Arduino 官方文档/商店 Tech Specs + A000066 数据手册 + DFRobot 授权代理页面核对（2026-10-28）",
+  "search": "arduino uno rev3 atmega328p 官方 开发板"
+ }
+]

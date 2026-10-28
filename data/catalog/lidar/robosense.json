@@ -1,0 +1,49 @@
+[
+ {
+  "id": "sens-robosense-airy",
+  "category": "lidar",
+  "subtype": "lidar",
+  "subtype_label": "激光雷达",
+  "vendor": "RoboSense",
+  "vendor_cn": "速腾聚创",
+  "model": "Airy",
+  "title": "RoboSense 速腾聚创 Airy",
+  "url": "https://www.robosense.ai/rslidar/Airy",
+  "source_tier": "A",
+  "verified": 1,
+  "last_checked": "2026-10-28",
+  "price_cny": 4078,
+  "specs": {
+   "gyro_range_dps": null,
+   "accel_range_g": null,
+   "odr_hz": null,
+   "iface": "100Base-TX 以太网（UDP）",
+   "noise": null,
+   "resolution": "0.4°×0.947°",
+   "depth_range_m": null,
+   "fps": 10,
+   "fov": "360°×90°",
+   "range_m": 30,
+   "points_per_s": 1712640,
+   "channel": 96,
+   "bits": null,
+   "absolute": "1 cm @1σ",
+   "temp_range_C": null,
+   "size_mm": "φ60×63",
+   "weight_g": 240,
+   "power_w": 8,
+   "voltage_V": 12,
+   "ip": null,
+   "image_url": "/parts/robosense-airy.jpg",
+   "image_source": "RoboSense 官网 Airy 产品图",
+   "doc_url": "https://www.robosense.ai/rslidar/Airy",
+   "doc_pdf": null,
+   "repo_urls": [
+    "https://github.com/RoboSense-LiDAR/rslidar_sdk"
+   ]
+  },
+  "notes": "半球形 FOV（360°×90°），30 m@10%、最远 60 m，盲区 0.1 m；96 线，单回波 856,320 pts/s、双回波 1,712,640 pts/s；100 Mbps 以太网 UDP，内置 IMU；9–32 V、<8 W、φ60×63 mm、<240 g。官方页写 1 cm@1σ，产品手册典型值 1.5 cm@1σ——【来源冲突】。官方未公开定价，渠道约 ¥4078（2026-10）；Airy Lite 海外 €600。",
+  "origin": "RoboSense 官网 Airy 产品页 + 产品手册规格页核对（2026-10-28）",
+  "search": "robosense airy 速腾聚创 半球形 激光雷达 96线 360 90"
+ }
+]

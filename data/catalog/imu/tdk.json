@@ -1,0 +1,39 @@
+[
+ {
+  "id": "sens-tdk-icm-42688-p",
+  "category": "imu",
+  "subtype": "imu_chip",
+  "subtype_label": "IMU 芯片",
+  "vendor": "TDK InvenSense",
+  "vendor_cn": "TDK 应美盛",
+  "model": "ICM-42688-P",
+  "title": "TDK InvenSense ICM-42688-P",
+  "url": "https://invensense.tdk.com/products/motion-tracking/6-axis/icm-42688-p/",
+  "source_tier": "A",
+  "verified": 1,
+  "last_checked": "2026-10-28",
+  "price_cny": null,
+  "specs": {
+   "gyro_range_dps": 2000,
+   "accel_range_g": 16,
+   "odr_hz": 32000,
+   "noise": "2.8 mdps/√Hz；70 µg/√Hz",
+   "iface": "I3C、I²C、SPI",
+   "voltage_V": 3.3,
+   "voltage_range_V": "1.71–3.6",
+   "power_w": 0.003,
+   "temp_range_C": "-40~85",
+   "size_mm": "2.5×3×0.91",
+   "weight_g": null,
+   "resolution": "16-bit",
+   "image_url": "/parts/tdk-icm-42688-p.png",
+   "image_source": "TDK InvenSense ICM-42688-P 产品页产品图",
+   "doc_url": "https://invensense.tdk.com/products/motion-tracking/6-axis/icm-42688-p/",
+   "doc_pdf": null,
+   "repo_urls": []
+  },
+  "notes": "6 轴；陀螺量程 ±15.6/31.2/62.5/125/250/500/1000/2000 °/s，加速度计量程 ±2/4/8/16 g；低噪声模式 6 轴电流 0.88 mA（按 3.3 V 折算约 0.003 W）；VDD/VDDIO 1.71–3.6 V；最高 ODR 32 kHz。常用于四足/人形机器人与无人机的高频姿态估计。TDK 数据手册下载需登录账号，doc_pdf 留空；官网未公开单价。",
+  "origin": "TDK InvenSense ICM-42688-P 产品页 + DS-000347 数据手册核对（2026-10-28）",
+  "search": "tdk invensense icm-42688-p 6轴 imu 陀螺仪 加速度计 spi i2c i3c 32khz 机器人"
+ }
+]

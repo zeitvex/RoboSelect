@@ -40,10 +40,15 @@ KNOWN_SPEC_KEYS = {
     # 下位机
     "mcu", "clock_mhz", "ram_kb", "flash_kb", "foc_axes", "canfd",
     "current_loop_khz", "torque_mode", "voltage_in_V", "voltage_max_V", "comm_upper",
+    # 资料链接（上下位机共用；不进参数表，只在「资料」里渲染）
+    "doc_url", "doc_pdf", "repo_urls", "urdf_urls",
     # 传感器
     "gyro_range_dps", "accel_range_g", "odr_hz", "iface", "noise", "resolution",
     "depth_range_m", "fps", "fov", "range_m", "points_per_s", "channel", "bits",
     "absolute", "temp_range_C",
+    # 机械结构（整机形态）
+    "dof", "payload_kg", "speed_max_mps", "climb_height_mm", "climb_angle_deg",
+    "endurance_h", "battery", "compute", "sensors",
     # 归档导入用到的字段（见 scripts/normalize_archive.py 的 FIELD_MAP）
     "tau_stall_Nm", "tau_hold_Nm", "i_stall_A", "dims", "temp_range",
     "storage_temp_range", "meas_range", "accuracy", "response_time", "power_w",
@@ -60,7 +65,9 @@ UI_KEYS = {
     "camera": {"depth_range_m", "image_url"},
     "imu": {"odr_hz", "image_url"},
     "module": {"image_url"},
+    "controller_high": {"image_url"},
     "controller_low": {"image_url"},
+    "structure": {"dof", "mass_kg", "payload_kg", "speed_max_mps", "image_url"},
 }
 
 # 阈值（来自 RoboParts《关节参数虚标怎么辨别》的物理红线）
@@ -90,6 +97,11 @@ PLAUSIBLE = {
     "power_max_w": (0.1, 5000.0),
     "current_loop_khz": (0.1, 200.0),
     "bits": (1.0, 32.0),
+    "dof": (1.0, 100.0),
+    "payload_kg": (0.01, 1000.0),
+    "speed_max_mps": (0.01, 30.0),
+    "climb_height_mm": (10.0, 2000.0),
+    "climb_angle_deg": (1.0, 90.0),
 }
 
 

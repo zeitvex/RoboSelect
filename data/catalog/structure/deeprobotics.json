@@ -1,0 +1,42 @@
+[
+ {
+  "id": "struct-deeprobotics-lynx-m20",
+  "category": "structure",
+  "subtype": "wheeled_quadruped_inward_knee",
+  "subtype_label": "四轮足 · 内膝肘",
+  "vendor": "云深处科技 DEEP Robotics",
+  "vendor_cn": "云深处科技",
+  "model": "山猫 M20",
+  "title": "云深处科技 山猫 M20",
+  "url": "https://www.deeprobotics.cn/products/detail/1.html",
+  "source_tier": "A",
+  "verified": 1,
+  "last_checked": "2026-10-28",
+  "price_cny": null,
+  "specs": {
+   "dof": null,
+   "mass_kg": 35,
+   "payload_kg": 15,
+   "speed_max_mps": 5,
+   "size_mm": "820×430×570（站立）",
+   "climb_height_mm": 250,
+   "climb_angle_deg": 45,
+   "battery": "容量未公布；充电约 1.5 h；自主回充为选配",
+   "endurance_h": "3 h（空载）/ 2.5 h（负载）",
+   "voltage_V": null,
+   "voltage_range_V": null,
+   "iface": "Ethernet；外部供电接口 72 V",
+   "compute": "八核 64 位工业级处理器 ×2",
+   "sensors": "激光雷达 ×2、广角相机 ×2",
+   "image_url": "/parts/deeprobotics-lynx-m20.webp",
+   "image_source": "云深处科技官网 山猫M20系列产品页产品图（deeprobotics.cn/products/detail/1.html）",
+   "doc_url": "https://www.deeprobotics.cn/products/detail/1.html",
+   "doc_pdf": null,
+   "repo_urls": [],
+   "urdf_urls": []
+  },
+  "notes": "轮足平台，采用前肘后膝（内膝肘式）腿构型，因此归入「四轮足 · 内膝肘」。官网 2026-10-28 参数：M20 基础版 35 kg（含电池）、持续运行负载 15 kg、空载 3 h/15 km、负载 2.5 h/12 km、极限测试速度 5 m/s（最大工作速度 2 m/s）、最大楼梯 25 cm、最大高台 80 cm、爬坡 45°、IP66、-20~55℃。官网未公布自由度、电池容量与额定电压，均留空；climb_height_mm 取最大楼梯高度 25 cm，最大高台 80 cm 属另一口径，不混填。系列另有 M20 Pro（同重量/负载，算力 ×3）与 M20S（36 kg、负载 35 kg、9 m/s、高台 100 cm、IP67），本条只收 M20 基础版。价格官网未公开，需联系销售；2024 年初代山猫发布价 ¥98,000，与本条 M20 不是同一代产品。腿构型见官方新闻稿及媒体报道，官网参数表未单列该行。",
+  "origin": "云深处科技官网 山猫M20系列产品页参数表核对（2026-10-28）",
+  "search": "deeprobotics 云深处 山猫 m20 lynx 轮足 四足 内膝肘 前肘后膝"
+ }
+]

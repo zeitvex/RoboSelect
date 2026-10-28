@@ -1,0 +1,47 @@
+[
+ {
+  "id": "struct-berkeley-humanoid-lite",
+  "category": "structure",
+  "subtype": "humanoid",
+  "subtype_label": "人形",
+  "vendor": "UC Berkeley Hybrid Robotics",
+  "vendor_cn": "加州大学伯克利分校 Hybrid Robotics",
+  "model": "Berkeley Humanoid Lite",
+  "title": "Berkeley Humanoid Lite",
+  "url": "https://lite.berkeley-humanoid.org/",
+  "source_tier": "A",
+  "verified": 1,
+  "last_checked": "2026-10-28",
+  "price_cny": null,
+  "specs": {
+   "dof": 22,
+   "mass_kg": 16,
+   "payload_kg": null,
+   "speed_max_mps": null,
+   "size_mm": "800（高）",
+   "climb_height_mm": null,
+   "climb_angle_deg": null,
+   "battery": "6S LiPo（22.2 V）",
+   "endurance_h": "≈0.5 h（6S LiPo）",
+   "voltage_V": 22.2,
+   "voltage_range_V": null,
+   "iface": null,
+   "compute": "Intel N95 迷你主机",
+   "sensors": "IMU",
+   "image_url": "/parts/berkeley-humanoid-lite.jpg",
+   "image_source": "Berkeley Humanoid Lite 官网首页封面图（lite.berkeley-humanoid.org）",
+   "doc_url": null,
+   "doc_pdf": null,
+   "repo_urls": [
+    "https://github.com/hybridrobotics/berkeley-humanoid-lite",
+    "https://github.com/HybridRobotics/Berkeley-Humanoid-Lite-Assets"
+   ],
+   "urdf_urls": [
+    "https://github.com/HybridRobotics/Berkeley-Humanoid-Lite-Assets/blob/main/data/robots/berkeley_humanoid/berkeley_humanoid_lite/urdf/berkeley_humanoid_lite.urdf"
+   ]
+  },
+  "notes": "官方开源人形：整机约 16 kg、高 0.8 m、22 自由度（按官方 URDF 关节数），3D 打印摆线针轮执行器，BOM 低于 US$5,000。算力为 Intel N95 迷你主机，6S LiPo 供电续航约 30 min。官网未公布负载、速度、电池容量与对外接口的精确值，相应字段留空；机械 CAD、URDF 与训练资产全部开源。",
+  "origin": "Berkeley Humanoid Lite 官网 + 官方 GitHub 仓库 + URDF 关节数核对（2026-10-28）",
+  "search": "berkeley humanoid lite 开源人形机器人 3d打印 22自由度 5000美元"
+ }
+]

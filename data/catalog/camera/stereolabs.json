@@ -1,0 +1,49 @@
+[
+ {
+  "id": "sens-stereolabs-zed-2i",
+  "category": "camera",
+  "subtype": "camera",
+  "subtype_label": "深度相机",
+  "vendor": "Stereolabs",
+  "vendor_cn": "Stereolabs",
+  "model": "ZED 2i",
+  "title": "Stereolabs ZED 2i",
+  "url": "https://www.stereolabs.com/en-cn/products/zed-2",
+  "source_tier": "A",
+  "verified": 1,
+  "last_checked": "2026-10-28",
+  "price_cny": 3570,
+  "specs": {
+   "gyro_range_dps": null,
+   "accel_range_g": null,
+   "odr_hz": null,
+   "iface": "USB-C 3.1",
+   "noise": null,
+   "resolution": "1920×1080（双目）",
+   "depth_range_m": "0.3–20",
+   "fps": 30,
+   "fov": "110°×70°",
+   "range_m": null,
+   "points_per_s": null,
+   "channel": null,
+   "bits": null,
+   "absolute": null,
+   "temp_range_C": null,
+   "size_mm": "175×30×43",
+   "weight_g": 230,
+   "power_w": 1.9,
+   "voltage_V": 5,
+   "ip": "IP66",
+   "image_url": "/parts/stereolabs-zed-2i.png",
+   "image_source": "Stereolabs 官方商城 ZED 2i 产品图",
+   "doc_url": "https://www.stereolabs.com/docs/",
+   "doc_pdf": null,
+   "repo_urls": [
+    "https://github.com/stereolabs/zed-ros2-wrapper"
+   ]
+  },
+  "notes": "双目 + 9 轴 IMU + 气压计 + 磁力计，120 mm 基线；2.1 mm 镜头下深度 0.3–20 m、FOV 110°H×70°V（对角 120°），1080p@30 fps；USB-C 3.1，5 V/380 mA（约 1.9 W），IP66。官方 $499（2026-10），按 7.15 汇率约 ¥3570。重量官方产品页 230 g，Clearpath 文档写 166 g——【来源冲突】，以官方页为准。",
+  "origin": "Stereolabs 官网 ZED 2i 产品页规格表核对（2026-10-28）",
+  "search": "zed 2i stereolabs 双目 深度相机 imu 气压计 ip66"
+ }
+]

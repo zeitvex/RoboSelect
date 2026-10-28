@@ -90,6 +90,16 @@ export const F: Record<string, FieldSpec> = {
   temp_range_C: { label: '温度范围' },
   size_mm: { label: '尺寸', unit: 'mm' },
   weight_g: { label: '重量', unit: 'g', dir: -1 },
+  // 机械结构（整机形态）
+  dof: { label: '自由度', dir: 1 },
+  payload_kg: { label: '负载', unit: 'kg', dir: 1 },
+  speed_max_mps: { label: '最大速度', unit: 'm/s', dir: 1 },
+  climb_height_mm: { label: '攀爬落差', unit: 'mm', dir: 1 },
+  climb_angle_deg: { label: '爬坡角度', unit: '°', dir: 1 },
+  endurance_h: { label: '续航', unit: 'h', dir: 1 },
+  battery: { label: '电池' },
+  compute: { label: '算力' },
+  sensors: { label: '传感器' },
   price_cny: { label: '参考价', unit: '¥', dir: -1 },
 }
 

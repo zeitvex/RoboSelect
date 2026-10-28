@@ -43,7 +43,41 @@
     },
     {
      "text": "机械结构",
-     "link": "/parts/structure/"
+     "collapsed": false,
+     "items": [
+      {
+       "text": "总览",
+       "link": "/parts/structure/"
+      },
+      {
+       "text": "四足（6）",
+       "link": "/parts/structure/#quadruped"
+      },
+      {
+       "text": "四轮足（1）",
+       "link": "/parts/structure/#wheeled_quadruped"
+      },
+      {
+       "text": "人形（6）",
+       "link": "/parts/structure/#humanoid"
+      },
+      {
+       "text": "双足（1）",
+       "link": "/parts/structure/#biped"
+      },
+      {
+       "text": "双轮足（待收录）",
+       "link": "/parts/structure/#wheeled_biped"
+      },
+      {
+       "text": "四足 · 内膝肘（待收录）",
+       "link": "/parts/structure/#quadruped_inward_knee"
+      },
+      {
+       "text": "四轮足 · 内膝肘（1）",
+       "link": "/parts/structure/#wheeled_quadruped_inward_knee"
+      }
+     ]
     },
     {
      "text": "IMU",

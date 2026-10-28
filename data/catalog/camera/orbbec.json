@@ -1,0 +1,49 @@
+[
+ {
+  "id": "sens-orbbec-gemini-335",
+  "category": "camera",
+  "subtype": "camera",
+  "subtype_label": "深度相机",
+  "vendor": "Orbbec",
+  "vendor_cn": "奥比中光",
+  "model": "Gemini 335",
+  "title": "奥比中光 Gemini 335",
+  "url": "https://www.orbbec.com/products/3d-cameras/gemini-335/",
+  "source_tier": "A",
+  "verified": 1,
+  "last_checked": "2026-10-28",
+  "price_cny": 1950,
+  "specs": {
+   "gyro_range_dps": null,
+   "accel_range_g": null,
+   "odr_hz": null,
+   "iface": "USB 3.0 Type-C",
+   "noise": null,
+   "resolution": "深度 1280×800；RGB 1920×1080",
+   "depth_range_m": "0.10–20",
+   "fps": 30,
+   "fov": "90°×65°",
+   "range_m": null,
+   "points_per_s": null,
+   "channel": null,
+   "bits": null,
+   "absolute": null,
+   "temp_range_C": "-10~45",
+   "size_mm": "90×25×30",
+   "weight_g": 97,
+   "power_w": 3,
+   "voltage_V": 5,
+   "ip": "IP5X",
+   "image_url": "/parts/orbbec-gemini-335.png",
+   "image_source": "奥比中光官网 Gemini 335 产品页产品图",
+   "doc_url": "https://www.orbbec.com/products/3d-cameras/gemini-335/",
+   "doc_pdf": null,
+   "repo_urls": [
+    "https://github.com/orbbec/OrbbecSDK_v2"
+   ]
+  },
+  "notes": "主动双目 + 内置 IMU，深度 1280×800@30 fps，RGB 1920×1080@30 fps（86°×55°），整机 <3 W、IP5X，国内供货和价格比 RealSense 稳定。官方国际页写 0.10–20 m+（最佳 0.26–3 m），国内发布资料写 0.3–10 m——【来源冲突】，以实际固件与场景为准，别按 20 m 做远距规划。国内官方价 ¥1950（2026-10，天猫 1920–1950），海外 $264。",
+  "origin": "奥比中光官网 Gemini 335 产品页 + Gemini 330 系列规格书页面核对（2026-10-28）",
+  "search": "orbbec gemini 335 奥比中光 深度相机 双目 imu usb"
+ }
+]

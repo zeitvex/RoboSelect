@@ -15,7 +15,7 @@ const CATS = [
   { value: 'actuator', label: '关节电机', hint: '选型主战场' },
   { value: 'controller_high', label: '上位机', hint: '推理与感知' },
   { value: 'controller_low', label: '下位机', hint: '力矩闭环' },
-  { value: 'structure', label: '机械结构', hint: '待收录' },
+  { value: 'structure', label: '机械结构', hint: '整机形态' },
   { value: 'imu', label: 'IMU', hint: '姿态与振动' },
   { value: 'lidar', label: '激光雷达', hint: '地形与建图' },
   { value: 'camera', label: '深度相机', hint: '视觉感知' },
@@ -87,6 +87,15 @@ function tableColumns(cat: string) {
       { title: 'CAN', width: 70, align: 'right' as const, render: (_: any, r: Part) => `${r.specs.can ?? '—'}${r.specs.canfd ? ' FD' : ''}` },
       { title: '电流环', width: 90, align: 'right' as const, render: (_: any, r: Part) => r.specs.current_loop_khz ? `${r.specs.current_loop_khz} kHz` : '—' },
       { title: '最高 V', width: 86, align: 'right' as const, render: (_: any, r: Part) => r.specs.voltage_max_V ?? '—' },
+      { title: '价', width: 84, align: 'right' as const, render: (_: any, r: Part) => r.price_cny ? `¥${r.price_cny}` : '—' },
+    ]
+  }
+  if (cat === 'structure') {
+    return [...base,
+      { title: '自由度', width: 80, align: 'right' as const, render: (_: any, r: Part) => num(r.specs.dof ?? '—') },
+      { title: '质量 kg', width: 90, align: 'right' as const, render: (_: any, r: Part) => num(r.specs.mass_kg ?? '—') },
+      { title: '负载 kg', width: 90, align: 'right' as const, render: (_: any, r: Part) => num(r.specs.payload_kg ?? '—') },
+      { title: '最大速度', width: 100, align: 'right' as const, render: (_: any, r: Part) => r.specs.speed_max_mps ? `${r.specs.speed_max_mps} m/s` : '—' },
       { title: '价', width: 84, align: 'right' as const, render: (_: any, r: Part) => r.price_cny ? `¥${r.price_cny}` : '—' },
     ]
   }

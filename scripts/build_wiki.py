@@ -22,12 +22,12 @@ DATA = ROOT / "data"
 OUT = ROOT / "wiki" / "docs"
 
 #: 品类。顺序即展示顺序 —— 关节电机是重点，放最前。
-#: 机械结构 / 电池 / 线束 没有收录：不是漏了，是没有可信来源，宁缺不编。
+#: 电池 / 线束 没有收录：不是漏了，是没有可信来源，宁缺不编。
 CATS = [
     ("actuator", "关节电机", "选型主战场"),
     ("controller_high", "上位机", "推理与感知"),
     ("controller_low", "下位机", "力矩闭环"),
-    ("structure", "机械结构", "待收录"),
+    ("structure", "机械结构", "按整机形态分类"),
     ("imu", "IMU", "姿态与振动"),
     ("lidar", "激光雷达", "地形与建图"),
     ("camera", "深度相机", "视觉感知"),
@@ -38,6 +38,19 @@ CATS = [
 
 CAT_CN = {c: n for c, n, _ in CATS}
 CAT_LABEL = CAT_CN
+
+#: 机械结构按整机形态分类。顺序即展示顺序；没收录的子类也保留，
+#: 目录页写明「待收录」，让读者知道这一类存在，而不是以为漏了。
+STRUCTURE_SUBTYPES = [
+    ("quadruped", "四足", "四足步态，机器狗的主流形态"),
+    ("wheeled_quadruped", "四轮足", "四足加轮端驱动，轮步复合"),
+    ("humanoid", "人形", "双足人形，带双臂"),
+    ("biped", "双足", "不带双臂或上肢简化的双足平台"),
+    ("wheeled_biped", "双轮足", "双足加轮端驱动"),
+    ("quadruped_inward_knee", "四足 · 内膝肘", "前肘后膝式腿构型"),
+    ("wheeled_quadruped_inward_knee", "四轮足 · 内膝肘", "前肘后膝式轮足平台"),
+]
+STRUCTURE_LABEL = {k: v for k, v, _ in STRUCTURE_SUBTYPES}
 
 
 def slug(s: str) -> str:
@@ -135,11 +148,51 @@ def generic_table(items: list[dict], cat: str) -> str:
                     f"| {num(s.get('current_loop_khz'))} | {num(s.get('voltage_max_V'))} "
                     f"| {'—' if p.get('price_cny') is None else format(int(p['price_cny']), ',')} "
                     f"| {tier_badge(p['source_tier'], p['verified'])} |")
+    elif cat == "camera":
+        head = ("| 型号 | 深度量程 m | FOV | 帧率 fps | 接口 | 价格 ¥ | 来源 |\n"
+                "|---|---|---|---|---|---|---|")
+        def row(p):
+            s = p["specs"]
+            return (f"| {mdl(p)} | {s.get('depth_range_m') or '—'} | {s.get('fov') or '—'} "
+                    f"| {num(s.get('fps'))} | {s.get('iface') or '—'} "
+                    f"| {'—' if p.get('price_cny') is None else format(int(p['price_cny']), ',')} "
+                    f"| {tier_badge(p['source_tier'], p['verified'])} |")
+    elif cat == "lidar":
+        head = ("| 型号 | 量程 m | FOV | 点频 kpts/s | 帧率 fps | 价格 ¥ | 来源 |\n"
+                "|---|---|---|---|---|---|---|")
+        def row(p):
+            s = p["specs"]
+            pps = s.get("points_per_s")
+            return (f"| {mdl(p)} | {num(s.get('range_m'))} | {s.get('fov') or '—'} "
+                    f"| {'—' if not pps else format(int(round(pps / 1000)), ',')} "
+                    f"| {num(s.get('fps'))} "
+                    f"| {'—' if p.get('price_cny') is None else format(int(p['price_cny']), ',')} "
+                    f"| {tier_badge(p['source_tier'], p['verified'])} |")
+    elif cat == "imu":
+        head = ("| 型号 | 子类 | 陀螺量程 °/s | 加计量程 g | ODR Hz | 接口 | 价格 ¥ | 来源 |\n"
+                "|---|---|---|---|---|---|---|---|")
+        def row(p):
+            s = p["specs"]
+            return (f"| {mdl(p)} | {p.get('subtype_label') or p['subtype']} "
+                    f"| {num(s.get('gyro_range_dps'))} | {num(s.get('accel_range_g'))} "
+                    f"| {num(s.get('odr_hz'))} | {s.get('iface') or '—'} "
+                    f"| {'—' if p.get('price_cny') is None else format(int(p['price_cny']), ',')} "
+                    f"| {tier_badge(p['source_tier'], p['verified'])} |")
+    elif cat == "structure":
+        head = ("| 型号 | 形态 | 自由度 | 质量 kg | 负载 kg | 最大速度 m/s | 价格 ¥ | 来源 |\n"
+                "|---|---|---|---|---|---|---|---|")
+        def row(p):
+            s = p["specs"]
+            return (f"| {mdl(p)} | {p.get('subtype_label') or STRUCTURE_LABEL.get(p['subtype'], p['subtype'])} "
+                    f"| {num(s.get('dof'))} | {num(s.get('mass_kg'))} | {num(s.get('payload_kg'))} "
+                    f"| {num(s.get('speed_max_mps'))} "
+                    f"| {'—' if p.get('price_cny') is None else format(int(p['price_cny']), ',')} "
+                    f"| {tier_badge(p['source_tier'], p['verified'])} |")
     else:
         head = "| 型号 | 子类 | 接口 | 关键参数 | 价格 ¥ | 来源 |\n|---|---|---|---|---|---|"
         def row(p):
             s = p["specs"]
-            keys = ("bits", "depth_range_m", "range_m", "fps", "odr_hz", "iface")
+            keys = ("bits", "odr_hz", "iface")
             kv = "、".join(f"{k}={num(s[k])}" for k in keys if s.get(k))
             return (f"| {mdl(p)} | {p.get('subtype_label') or p['subtype']} "
                     f"| {s.get('iface') or '—'} | {kv or '—'} "
@@ -326,18 +379,40 @@ def main() -> None:
         "power_max_w": "峰值功耗 (W)", "mcu": "MCU", "can": "CAN 路数",
         "canfd": "CAN-FD", "current_loop_khz": "电流环 (kHz)",
         "voltage_max_V": "最高电压 (V)", "foc_axes": "FOC 轴数",
-        "iface": "接口", "bits": "分辨率 (bit)", "fps": "帧率 (fps)",
+        "iface": "接口", "bits": "位宽 (bit)", "fps": "帧率 (fps)",
         "odr_hz": "ODR (Hz)", "range_m": "量程 (m)", "depth_range_m": "深度量程 (m)",
+        "gyro_range_dps": "陀螺量程 (°/s)", "accel_range_g": "加速度量程 (g)",
+        "noise": "噪声", "resolution": "分辨率", "points_per_s": "点频 (pts/s)",
+        "channel": "线数 / 通道", "absolute": "精度 / 绝对式",
+        "temp_range_C": "工作温度 (°C)", "power_w": "功耗 (W)", "fov": "视场角 (FOV)",
         "image_url": "产品图", "image_source": "图片来源",
+        "cpu": "CPU", "cores": "核心数", "cpu_arch": "架构",
+        "ram_bw_gbs": "内存带宽 (GB/s)", "storage_gb": "板载存储 (GB)",
+        "power_idle_w": "待机功耗 (W)", "os": "系统", "cuda": "CUDA",
+        "ros2": "ROS 2", "eth": "网口", "usb": "USB", "csi": "CSI 相机口",
+        "pcie": "PCIe / M.2", "size_mm": "尺寸 (mm)", "weight_g": "重量 (g)",
+        "clock_mhz": "主频 (MHz)", "ram_kb": "RAM (KB)", "flash_kb": "Flash (KB)",
+        "torque_mode": "力矩模式", "voltage_in_V": "额定输入电压 (V)",
+        "comm_upper": "上位机通信",
+        # 整机形态
+        "dof": "自由度", "payload_kg": "负载 (kg)", "speed_max_mps": "最大速度 (m/s)",
+        "climb_height_mm": "攀爬落差 (mm)", "climb_angle_deg": "爬坡角度 (°)",
+        "endurance_h": "续航 (h)", "battery": "电池", "compute": "算力",
+        "sensors": "传感器",
     }
 
-    def spec_rows(specs: dict) -> str:
+    def spec_rows(specs: dict, category: str = "") -> str:
         out = []
         for k, v in specs.items():
-            if k in ("image_url", "image_source"):
+            if k in ("image_url", "image_source", "doc_url", "doc_pdf", "repo_urls", "urdf_urls"):
                 continue
             label = SPEC_LABEL.get(k, k)
-            val = "—" if v is None else (str(v) if isinstance(v, str) else num(v, 4))
+            if k == "points_per_s" and isinstance(v, (int, float)):
+                val = format(int(v), ",")
+            elif isinstance(v, bool) and category.startswith("controller"):
+                val = "是" if v else "否"
+            else:
+                val = "—" if v is None else (str(v) if isinstance(v, str) else num(v, 4))
             out.append(f"| {label} | {val} |")
         return "\n".join(out)
 
@@ -391,9 +466,27 @@ def main() -> None:
         q = quote_plus(f"{r['vendor']} {r['model']}")
         qz = quote_plus(f"{r['model']}")
         rows: list[tuple[str, str, str]] = []
+        seen_urls: set[str] = set()
 
         if r.get("url"):
             rows.append(("官方页面 / 数据出处", r["url"], "本页数字的出处"))
+            seen_urls.add(r["url"])
+        if s.get("doc_url") and s["doc_url"] not in seen_urls:
+            rows.append(("官方文档", s["doc_url"], "接口、引脚与系统说明"))
+            seen_urls.add(s["doc_url"])
+        if s.get("doc_pdf"):
+            rows.append(("官方 PDF", s["doc_pdf"], "数据手册 / 使用说明书"))
+            seen_urls.add(s["doc_pdf"])
+        models = [u for u in (s.get("urdf_urls") or []) if u and u not in seen_urls]
+        for i, u in enumerate(models, 1):
+            name = "URDF / MJCF 模型" if i == 1 else f"URDF / MJCF 模型 {i}"
+            rows.append((name, u, "官方 / 社区维护的整机模型，可直接导入 PyBullet、MuJoCo、Isaac"))
+            seen_urls.add(u)
+        repos = [u for u in (s.get("repo_urls") or []) if u and u not in seen_urls]
+        for i, u in enumerate(repos, 1):
+            name = "开源项目" if len(repos) == 1 else f"开源项目 {i}"
+            rows.append((name, u, "官方 / 社区维护的 SDK、驱动与例程"))
+            seen_urls.add(u)
         if s.get("image_source"):
             rows.append(("产品图出处", "", str(s["image_source"])))
         if r.get("origin"):
@@ -484,6 +577,10 @@ def main() -> None:
                 out.append(("功耗与散热", f"峰值 {num(s['power_max_w'])} W。"
                             f"整机电池与线束要按这个数留余量，别按典型功耗选。"))
         elif cat == "controller_low":
+            if not s.get("foc_axes"):
+                out.append(("这块不含 FOC 功率级",
+                            "foc_axes 为空是因为板上没有集成电机驱动，不是漏填。"
+                            "电机要外接电调/驱动器，选型时把电调的价格、体积和散热一起算进去。"))
             if s.get("current_loop_khz"):
                 out.append(("力矩带宽", f"电流环 {num(s['current_loop_khz'])} kHz。"
                             f"做高动态力矩控制时，这个数比 MCU 主频更决定手感。"))
@@ -496,6 +593,47 @@ def main() -> None:
                 out.append(("ODR 与带宽", f"ODR {num(s['odr_hz'])} Hz。"
                             f"四足触地冲击的主要能量在 100–300 Hz，采样要够但别忘低通。"))
             out.append(("装在哪里", "尽量远离电机与减速器，或做温补 —— 四足跑久了 IMU 附近升温会有零偏漂移。"))
+        elif cat == "structure":
+            sub = r["subtype"]
+            if sub in ("quadruped", "wheeled_quadruped",
+                       "quadruped_inward_knee", "wheeled_quadruped_inward_knee"):
+                if s.get("payload_kg") is not None:
+                    out.append(("负载按行走工况算",
+                                f"本行负载取 {num(s['payload_kg'])} kg（行走口径）。"
+                                f"站立静载可能更高，但跑动、越障要按行走负载规划，别拿静载数当动态能力。"))
+                if s.get("endurance_h") is not None:
+                    out.append(("续航按最差工况留余量",
+                                f"标称 {s['endurance_h']}。带载、爬坡、低温都会明显缩短，"
+                                f"别把空载续航当成交付指标。"))
+                if sub in ("wheeled_quadruped", "wheeled_quadruped_inward_knee"):
+                    out.append(("轮足不是四足的替代",
+                                "轮端适合平整路面高速移动；台阶、碎石、松软地面仍要靠足式步态。"
+                                "选之前先列清楚任务地形里轮式与足式各占多少。"))
+                else:
+                    out.append(("腿构型决定越障与受力",
+                                "全膝式、全肘式、前肘后膝（内膝肘）的关节受力与越障姿态不同；"
+                                "同尺寸同质量也不能直接横比爬坡和续航。"))
+                if s.get("climb_height_mm") is not None:
+                    out.append(("爬高与爬坡分开看",
+                                f"最大攀爬落差 {num(s['climb_height_mm'])} mm、爬坡 "
+                                f"{num(s['climb_angle_deg'])}°。落差考验单腿摆高与关节峰值，"
+                                f"爬坡考验持续扭矩与抓地。"))
+            elif sub == "humanoid":
+                if s.get("payload_kg") is not None:
+                    out.append(("人形的负载是手臂负载",
+                                f"标称 {num(s['payload_kg'])} kg 通常是单手臂最大负载，随伸展姿态变化；"
+                                f"整机搬运能力要看厂商的整机负载口径。"))
+                if s.get("dof") is not None:
+                    out.append(("自由度决定动作空间",
+                                f"{num(s['dof'])} 个关节。腰、腕、手是选配重点，"
+                                f"下单前确认这个版本到底包含哪些自由度。"))
+                out.append(("先确认是不是同一版本",
+                            "同名人形常分标准版与 EDU / 开发版，自由度、算力、手部配置都不同，"
+                            "价格也不同 —— 对比参数前先对齐版本。"))
+            if not out:
+                out.append(("整机参数不是部件参数",
+                            "这一条收的是整机形态，用于对照平台方案；"
+                            "关节电机、主控等部件请到对应品类里选。"))
         elif cat in ("camera", "lidar"):
             out.append(("先算视场与量程", "近距离抓地形看深度量程下限，别只看最大值；"
                         "楼梯这类弱纹理场景，结构光/ToF 与双目表现差别很大。"))
@@ -537,12 +675,27 @@ def main() -> None:
         conflicts = "【来源冲突】" in (r.get("notes") or "")
 
         # 官方参数一侧：只放关键字段，全部参数放到下面单独一节
-        KEY = ["tau_peak_Nm", "tau_rated_Nm", "gear", "speed_noload_rpm", "mass_kg",
-               "armature_kgm2", "od_mm", "l_mm", "voltage_V", "kt_Nm_per_A",
-               "soc", "npu_tops", "ram_gb", "mcu", "can", "iface", "bits"]
+        if cat == "camera":
+            KEY = ["depth_range_m", "fov", "fps", "resolution", "iface",
+                   "voltage_V", "power_w", "ip", "weight_g", "size_mm"]
+        elif cat == "lidar":
+            KEY = ["range_m", "fov", "points_per_s", "fps", "resolution", "iface",
+                   "voltage_V", "power_w", "ip", "weight_g", "size_mm"]
+        elif cat == "imu":
+            KEY = ["gyro_range_dps", "accel_range_g", "odr_hz", "noise", "iface",
+                   "voltage_V", "power_w", "weight_g", "size_mm"]
+        elif cat == "structure":
+            KEY = ["dof", "mass_kg", "payload_kg", "speed_max_mps", "size_mm",
+                   "climb_height_mm", "climb_angle_deg", "battery", "endurance_h",
+                   "voltage_V", "voltage_range_V", "iface", "compute", "sensors"]
+        else:
+            KEY = ["tau_peak_Nm", "tau_rated_Nm", "gear", "speed_noload_rpm", "mass_kg",
+                   "armature_kgm2", "od_mm", "l_mm", "voltage_V", "kt_Nm_per_A",
+                   "soc", "cpu", "cuda_cores", "npu_tops", "ram_gb", "power_max_w", "eth",
+                   "mcu", "foc_axes", "can", "current_loop_khz", "voltage_max_V", "iface", "bits"]
         keyrows = "\n".join(
             f"| {SPEC_LABEL.get(k, k)} | "
-            f"{'—' if s.get(k) is None else (s[k] if isinstance(s[k], str) else num(s[k], 4))} |"
+            f"{'—' if s.get(k) is None else (s[k] if isinstance(s[k], str) else (format(int(s[k]), ',') if k == 'points_per_s' else num(s[k], 4)))} |"
             for k in KEY if k in s)
         if not keyrows:
             keyrows = "| — | 这一类暂无核心字段 |"
@@ -685,7 +838,7 @@ def main() -> None:
 
 | 字段 | 值 |
 |---|---|
-{spec_rows(s)}
+{spec_rows(s, r["category"])}
 
 ## 优惠与获取条件
 
@@ -918,7 +1071,31 @@ def main() -> None:
 用过的、量到的、和厂商确认过的，写在下面。**带上具体工况**（负载、占空比、环境温度），
 只写「好用/不好用」对下一个人没有价值。
 """, encoding="utf-8")
+        elif c == "structure":
+            sections = []
+            for st, label, note in STRUCTURE_SUBTYPES:
+                sub = [r for r in items if r["subtype"] == st]
+                if sub:
+                    sections.append(
+                        f"## {label} {{#{st}}}\n\n{note}，共 **{len(sub)}** 款。\n\n"
+                        + generic_table(sub, c))
+                else:
+                    sections.append(
+                        f"## {label} {{#{st}}}\n\n{note}。暂无收录 —— 没有可信来源，宁缺不编。")
+            n_sub = len({r["subtype"] for r in items})
+            (OUT / "parts" / c / "index.md").write_text(
+                FRONT.format(title=name) + f"""
+# {name}
+
+按机器人形态分类收录整机，共 **{len(items)}** 款、**{n_sub}** 种形态。
+轮足与足式的通过性、续航、负载口径不同，先按任务地形选形态，再横比参数。
+
+{(chr(10) * 2).join(sections)}
+""", encoding="utf-8")
         else:
+            n_b = sum(1 for r in items if r["source_tier"] != "A")
+            tier_note = (f"\n> 其中 {n_b} 行是 `B` 级（来自公开文档/官网，未逐项核对），"
+                         f"采购前请回原厂页面确认。\n" if n_b else "")
             (OUT / "parts" / c / "index.md").write_text(
                 FRONT.format(title=name) + f"""
 # {name}
@@ -926,9 +1103,7 @@ def main() -> None:
 {desc}，共 **{len(items)}** 件。
 
 {generic_table(items, c)}
-
-> 这些行是 `B` 级（来自公开文档/官网，未逐项核对），采购前请回原厂页面确认。
-""", encoding="utf-8")
+{tier_note}""", encoding="utf-8")
 
 
     # ── 参数口径（直接 import 后端的常量，杜绝漂移）──────────────────
@@ -1202,8 +1377,20 @@ html.dark .rl-th {{ color: #e0b159; }}
     for c, name, _ in CATS:
         if c == "actuator":
             continue
-        sidebar["/parts/"][0]["items"].append(
-            {"text": name, "link": f"/parts/{c}/"})
+        if c == "structure":
+            sub_items = [{"text": "总览", "link": "/parts/structure/"}]
+            for st, label, _ in STRUCTURE_SUBTYPES:
+                n = sum(1 for r in rows
+                        if r["category"] == "structure" and r["subtype"] == st)
+                sub_items.append({
+                    "text": f"{label}（{n}）" if n else f"{label}（待收录）",
+                    "link": f"/parts/structure/#{st}",
+                })
+            sidebar["/parts/"][0]["items"].append(
+                {"text": name, "collapsed": False, "items": sub_items})
+        else:
+            sidebar["/parts/"][0]["items"].append(
+                {"text": name, "link": f"/parts/{c}/"})
 
     sem = json.loads((DATA / ".." / "backend" / "app" / "api" / "routes" /
                       "_semantics_cache.json").read_text(encoding="utf-8")) \

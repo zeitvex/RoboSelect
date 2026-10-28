@@ -1,0 +1,43 @@
+[
+ {
+  "id": "cont-odrive-s1",
+  "category": "controller_low",
+  "subtype": "servo_driver",
+  "vendor": "ODrive Robotics",
+  "vendor_cn": "ODrive Robotics",
+  "model": "ODrive S1",
+  "title": "ODrive S1",
+  "url": "https://shop.odriverobotics.com/products/odrive-s1",
+  "source_tier": "A",
+  "verified": 1,
+  "last_checked": "2026-10-28",
+  "price_cny": 1060,
+  "specs": {
+   "mcu": null,
+   "clock_mhz": null,
+   "ram_kb": null,
+   "flash_kb": null,
+   "foc_axes": 1,
+   "canfd": false,
+   "can": 1,
+   "current_loop_khz": null,
+   "torque_mode": true,
+   "voltage_in_V": 24,
+   "voltage_max_V": 50.5,
+   "comm_upper": "USB / CAN / UART / PWM / STEP-DIR",
+   "size_mm": "66×50",
+   "weight_g": null,
+   "image_url": "/parts/odrive-s1.jpg",
+   "image_source": "ODrive 官方商店 ODrive S1 产品图",
+   "doc_url": "https://docs.odriverobotics.com/",
+   "doc_pdf": null,
+   "repo_urls": [
+    "https://github.com/odriverobotics/ODrive",
+    "https://github.com/odriverobotics/ODriveHardware"
+   ]
+  },
+  "notes": "单轴 FOC 驱动器；12–50.5V、持续 40A / 峰值 80A、约 2kW；CAN / USB / UART / PWM / STEP-DIR；板载磁编码器，另支持 SPI/ABZ/RS485/Hall；约 66×50mm；MCU 型号官方未公开。价格 $149（2026-10 官方商店），约 ¥1060。",
+  "origin": "ODrive 官方文档 + 官方商店价格核对（2026-10-28）",
+  "search": "odrive s1 foc servo driver can"
+ }
+]

@@ -1,0 +1,41 @@
+[
+ {
+  "id": "sens-xsens-mti-3",
+  "category": "imu",
+  "subtype": "imu_module",
+  "subtype_label": "IMU 模组",
+  "vendor": "Movella Xsens",
+  "vendor_cn": "Movella（Xsens）",
+  "model": "MTi-3",
+  "title": "Movella Xsens MTi-3",
+  "url": "https://www.xsens.com/products/sensor-modules/xsens-mti-1-series",
+  "source_tier": "A",
+  "verified": 1,
+  "last_checked": "2026-10-28",
+  "price_cny": null,
+  "specs": {
+   "gyro_range_dps": 2000,
+   "accel_range_g": 16,
+   "odr_hz": 1000,
+   "noise": "0.003 °/s/√Hz；70 µg/√Hz",
+   "iface": "UART、SPI、I²C",
+   "voltage_V": 3.3,
+   "voltage_range_V": "2.8–3.6",
+   "power_w": 0.1,
+   "temp_range_C": "-40~85",
+   "size_mm": "12.1×12.1×2.55",
+   "weight_g": 0.6,
+   "resolution": null,
+   "image_url": null,
+   "image_source": null,
+   "doc_url": "https://www.xsens.com/products/sensor-modules/xsens-mti-1-series",
+   "doc_pdf": null,
+   "repo_urls": [
+    "https://github.com/xsens/xsens_mti_ros_node"
+   ]
+  },
+  "notes": "MTi-1 系列中的 AHRS 型号；陀螺 ±2000 °/s、加速度 ±16 g、磁力 ±8 G；输出频率最高 1 kHz；滚转/俯仰 0.5° RMS，MTi-3 航向 2° RMS；2.8–3.6 V、<100 mW、0.6 g、12.1×12.1×2.55 mm。官网只提供 MTi-3 DK 套件图，未提供独立模组产品图，image_url 留空；价格需向 Movella/Xsens 或代理商询价。",
+  "origin": "Xsens MTi 1-Series 产品页规格表 + xsens_mti_ros_node 官方仓库核对（2026-10-28）",
+  "search": "xsens movella mti-3 mti 1-series ahrs imu 陀螺仪 人形 机器人"
+ }
+]

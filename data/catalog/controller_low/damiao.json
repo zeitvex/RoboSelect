@@ -1,0 +1,42 @@
+[
+ {
+  "id": "cont-damiao-dm-mc02",
+  "category": "controller_low",
+  "subtype": "mcu",
+  "vendor": "达妙 DAMIAO",
+  "vendor_cn": "达妙科技",
+  "model": "DM-MC02",
+  "title": "达妙 DAMIAO DM-MC02",
+  "url": "https://gitee.com/kit-miao/dm-mc02",
+  "source_tier": "A",
+  "verified": 1,
+  "last_checked": "2026-10-28",
+  "price_cny": 199,
+  "specs": {
+   "mcu": "STM32H723VGT6 (Cortex-M7)",
+   "clock_mhz": 550,
+   "ram_kb": 564,
+   "flash_kb": 1024,
+   "foc_axes": null,
+   "canfd": true,
+   "can": 3,
+   "current_loop_khz": null,
+   "torque_mode": null,
+   "voltage_in_V": 12,
+   "voltage_max_V": 24,
+   "comm_upper": "USB / CAN FD / RS485 / UART",
+   "size_mm": "56×40",
+   "weight_g": 19.5,
+   "image_url": "/parts/damiao-dm-mc02.jpg",
+   "image_source": "达妙 Gitee 仓库 图片/DM_H7.png",
+   "doc_url": "https://gitee.com/kit-miao/dm-mc02",
+   "doc_pdf": "https://gitee.com/kit-miao/dm-mc02/raw/master/说明书/达妙科技DM-MC-Board02电机开发板使用说明书V1.1.pdf",
+   "repo_urls": [
+    "https://gitee.com/kit-miao/dm-mc02"
+   ]
+  },
+  "notes": "STM32H723VGT6（550MHz、1MB Flash、564KB RAM）；3× CAN FD 最大 5Mbps、2× RS485 最大 10Mbps、3× 串口、4× PWM、SBUS、BMI088、8MB QSPI；12–24V 输入（支持 6S）、5V@2A 输出、2 路 XT30 可控电源（每路 5A）；56×40mm、19.5g。注意：这是主控板，不含 FOC 功率级，不能直接驱动电机，需配达妙电机/驱动器。价格 ¥199 为渠道参考价。",
+  "origin": "达妙官方 Gitee 仓库 + 使用说明书 V1.1 核对（2026-10-28）",
+  "search": "damiao dm-mc02 stm32h723"
+ }
+]

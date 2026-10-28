@@ -1,0 +1,41 @@
+[
+ {
+  "id": "sens-damiao-dm-imu-l1",
+  "category": "imu",
+  "subtype": "imu_module",
+  "subtype_label": "IMU 模组",
+  "vendor": "达妙 DAMIAO",
+  "vendor_cn": "达妙科技",
+  "model": "DM-IMU-L1",
+  "title": "达妙 DM-IMU-L1",
+  "url": "https://item.taobao.com/item.htm?id=984622435559",
+  "source_tier": "A",
+  "verified": 1,
+  "last_checked": "2026-10-28",
+  "price_cny": 59,
+  "specs": {
+   "gyro_range_dps": 2000,
+   "accel_range_g": 6,
+   "odr_hz": 1000,
+   "noise": null,
+   "iface": "USB、RS485、CAN",
+   "voltage_V": null,
+   "voltage_range_V": "5–28",
+   "power_w": 0.47,
+   "temp_range_C": null,
+   "size_mm": "36×26×9",
+   "weight_g": 11.5,
+   "resolution": "16-bit（BMI088）",
+   "image_url": "/parts/damiao-dm-imu-l1.webp",
+   "image_source": "达妙科技企业店（淘宝）商品主图",
+   "doc_url": "https://github.com/OpenDogeRobotics/OpenDoge_hardware/tree/main/datasheets/dm-imu",
+   "doc_pdf": "https://cdn.jsdelivr.net/gh/OpenDogeRobotics/OpenDoge_hardware@main/datasheets/dm-imu/%E8%BE%BE%E5%A6%99%E7%A7%91%E6%8A%80DM-IMU-L1%E5%85%AD%E8%BD%B4IMU%E6%A8%A1%E5%9D%97%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E%E4%B9%A6V1.2.pdf",
+   "repo_urls": [
+    "https://github.com/OpenDogeRobotics/OpenDoge_hardware"
+   ]
+  },
+  "notes": "六轴 IMU 模组，内置 Bosch BMI088（三轴陀螺 + 三轴加速度计），板载加热恒温控制与 EKF 四元数姿态解算，主控 200 MHz。姿态指标（校准后、室温 25 °C 一小时零漂）：横滚 0.02°、俯仰 0.064°、航向 12.686°，量程分别为 ±180°/±90°/±180°。加速度计 ±6 g、零偏 20 mg、非线性 ±0.5 %FS、带宽 230 Hz；陀螺 ±2000 °/s、零偏 ±1 °/s、非线性 ±0.05 %FS、带宽 116 Hz；加速度/角速度原始指标来自 BMI088 数据手册，模组只做校准不做滤波。输出频率 100–1000 Hz 可调；CAN 默认 1 Mbps，可配 1M/500k/400k/250k/200k/100k/50k/25k；RS485 最高 4 Mbps；USB 为虚拟串口。输入 5–28 V，24 V 稳态 0.47 W、升温阶段 2.5 W，5 V 约 0.34 W。说明书未标注工作温度范围与噪声密度，故留空。价格来源：达妙科技企业店淘宝商品页（2026-10-28，标价 ¥59，活动价可能变化）；商品页需登录查看，公开列表页可核对标题与价格。",
+  "origin": "达妙科技 DM-IMU-L1 六轴 IMU 模块使用说明书 V1.2（2025-12-05）+ 达妙科技企业店商品页核对（2026-10-28）",
+  "search": "达妙 damiao dm-imu-l1 imu 六轴 惯性测量单元 bmi088 can rs485 ekf 恒温 姿态解算"
+ }
+]

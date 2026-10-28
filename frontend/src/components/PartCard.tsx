@@ -48,6 +48,15 @@ const SPEC_CHIPS: Record<string, (p: Part) => { k: string; v: string }[]> = {
     if (s.odr_hz) out.push({ k: 'ODR', v: `${s.odr_hz} Hz` })
     return out.slice(0, 4)
   },
+  structure: p => {
+    const s = p.specs
+    const out: { k: string; v: string }[] = []
+    if (s.dof) out.push({ k: '自由度', v: String(s.dof) })
+    if (s.mass_kg) out.push({ k: '质量', v: `${s.mass_kg} kg` })
+    if (s.payload_kg) out.push({ k: '负载', v: `${s.payload_kg} kg` })
+    if (s.speed_max_mps) out.push({ k: '速度', v: `${s.speed_max_mps} m/s` })
+    return out.slice(0, 4)
+  },
 }
 
 function Tier({ tier, verified }: { tier: string; verified: boolean }) {

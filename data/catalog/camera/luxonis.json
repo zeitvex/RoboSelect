@@ -1,0 +1,49 @@
+[
+ {
+  "id": "sens-luxonis-oak-d-pro",
+  "category": "camera",
+  "subtype": "camera",
+  "subtype_label": "深度相机",
+  "vendor": "Luxonis",
+  "vendor_cn": "Luxonis",
+  "model": "OAK-D Pro",
+  "title": "Luxonis OAK-D Pro",
+  "url": "https://shop.luxonis.com/products/oak-d-pro",
+  "source_tier": "A",
+  "verified": 1,
+  "last_checked": "2026-10-28",
+  "price_cny": 3060,
+  "specs": {
+   "gyro_range_dps": null,
+   "accel_range_g": null,
+   "odr_hz": null,
+   "iface": "USB-C（USB2 / USB3）",
+   "noise": null,
+   "resolution": "深度 1280×800；RGB 4056×3040",
+   "depth_range_m": "0.7–12",
+   "fps": 120,
+   "fov": "80°×55°",
+   "range_m": null,
+   "points_per_s": null,
+   "channel": null,
+   "bits": null,
+   "absolute": "<2% @<4 m",
+   "temp_range_C": "-20~50",
+   "size_mm": "97×29.5×22.9",
+   "weight_g": 91,
+   "power_w": 3.5,
+   "voltage_V": 5,
+   "ip": "IP66",
+   "image_url": "/parts/luxonis-oak-d-pro.jpg",
+   "image_source": "Luxonis 官方商城 OAK-D Pro 产品图",
+   "doc_url": "https://docs.luxonis.com/",
+   "doc_pdf": null,
+   "repo_urls": [
+    "https://github.com/luxonis/depthai"
+   ]
+  },
+  "notes": "主动双目 + IR 点阵/补光，深度在板载 RVC2 上直接算，主机只收结果，适合算力紧张的机上方案。官方推荐 0.7–12 m（800P 最小 0.7 m，扩展模式可到约 0.2 m；理论最远 35 m）；深度 1280×800@120 fps，RGB 12MP@60 fps（IMX378）；IMU 为 BNO086 或 BMI270（分批）。官方 $429（2026-10），按 7.15 汇率约 ¥3060。Waveshare 标的 0.2–9 m 是不同测试口径，与官方推荐值不一致。",
+  "origin": "Luxonis 官方商城 OAK-D Pro 页面 + OakChina 产品规格页核对（2026-10-28）",
+  "search": "oak-d pro luxonis 深度相机 rvc2 主动双目 ip66 imu"
+ }
+]

@@ -1,0 +1,82 @@
+[
+ {
+  "id": "cont-dji-dev-board-a",
+  "category": "controller_low",
+  "subtype": "mcu",
+  "vendor": "大疆 DJI",
+  "vendor_cn": "大疆创新",
+  "model": "RoboMaster 开发板 A 型",
+  "title": "大疆 RoboMaster 开发板 A 型",
+  "url": "https://www.robomaster.com/zh-CN/products/components/general/development-board",
+  "source_tier": "A",
+  "verified": 1,
+  "last_checked": "2026-10-28",
+  "price_cny": 429,
+  "specs": {
+   "mcu": "STM32F427IIH6 (Cortex-M4)",
+   "clock_mhz": 180,
+   "ram_kb": 256,
+   "flash_kb": 2048,
+   "foc_axes": null,
+   "canfd": false,
+   "can": 2,
+   "current_loop_khz": null,
+   "torque_mode": null,
+   "voltage_in_V": 24,
+   "voltage_max_V": 26,
+   "comm_upper": "USB / CAN / UART / DBUS",
+   "size_mm": "85×58",
+   "weight_g": 48,
+   "image_url": "/parts/dji-dev-board-a.jpg",
+   "image_source": "DJI RoboMaster 开发板套件页面产品图",
+   "doc_url": "https://www.robomaster.com/zh-CN/products/components/general/development-board",
+   "doc_pdf": null,
+   "repo_urls": [
+    "https://github.com/RoboMaster/DevelopmentBoard-Examples"
+   ]
+  },
+  "notes": "STM32F427IIH6；CAN1 6 口 / CAN2 4 口、4× UART、蓝牙串口、DBUS、16 路可调 PWM + 4 路无电源 PWM、18× GPIO、IMU + 电子罗盘；26V 上限、4–6S LiPo、持续 20A、85×58mm、48g。注意：这是主控板，不含 FOC 功率级，电机需外接 C620/C610 电调。官方价 ¥429。",
+  "origin": "DJI RoboMaster 官网产品页 + 技术参数核对（2026-10-28）",
+  "search": "dji robomaster development board type a stm32f427"
+ },
+ {
+  "id": "cont-dji-dev-board-c",
+  "category": "controller_low",
+  "subtype": "mcu",
+  "vendor": "大疆 DJI",
+  "vendor_cn": "大疆创新",
+  "model": "RoboMaster 开发板 C 型",
+  "title": "大疆 RoboMaster 开发板 C 型",
+  "url": "https://www.robomaster.com/zh-CN/products/components/general/development-board-type-c",
+  "source_tier": "A",
+  "verified": 1,
+  "last_checked": "2026-10-28",
+  "price_cny": 379,
+  "specs": {
+   "mcu": "STM32F407IGH6TR (Cortex-M4)",
+   "clock_mhz": 168,
+   "ram_kb": 192,
+   "flash_kb": 1024,
+   "foc_axes": null,
+   "canfd": false,
+   "can": 2,
+   "current_loop_khz": null,
+   "torque_mode": null,
+   "voltage_in_V": 24,
+   "voltage_max_V": 28,
+   "comm_upper": "USB / CAN / UART / DBUS",
+   "size_mm": "60×41×16",
+   "weight_g": 38,
+   "image_url": "/parts/dji-dev-board-c.jpg",
+   "image_source": "DJI RoboMaster 开发板 C 型页面主视觉",
+   "doc_url": "https://www.robomaster.com/zh-CN/products/components/general/development-board-type-c",
+   "doc_pdf": null,
+   "repo_urls": [
+    "https://github.com/RoboMaster/Development-Board-C-Examples"
+   ]
+  },
+  "notes": "STM32F407IGH6TR（168MHz、1MB Flash、192KB RAM，含 64KB CCM）；CAN1/CAN2 各 2 口、2× UART、7× PWM、DBUS、IIC、SPI、DCMI 数字摄像头、BMI088 + IST8310；8–28V 输入、待机 0.01A@24V、60×41×16mm、38g。注意：这是主控板，不含 FOC 功率级，需外接电调。官方价 ¥379。",
+  "origin": "DJI RoboMaster 官网产品页 + 用户手册参数核对（2026-10-28）",
+  "search": "dji robomaster development board type c stm32f407"
+ }
+]

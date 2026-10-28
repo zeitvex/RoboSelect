@@ -1,0 +1,41 @@
+[
+ {
+  "id": "sens-hipnuc-hi12m0",
+  "category": "imu",
+  "subtype": "imu_module",
+  "subtype_label": "IMU 模组",
+  "vendor": "超核电子 HiPNUC",
+  "vendor_cn": "北京超核电子",
+  "model": "HI12M0",
+  "title": "超核电子 HiPNUC HI12M0",
+  "url": "https://www.hipnuc.com/hi12.html",
+  "source_tier": "A",
+  "verified": 1,
+  "last_checked": "2026-10-28",
+  "price_cny": null,
+  "specs": {
+   "gyro_range_dps": 2000,
+   "accel_range_g": 24,
+   "odr_hz": 1000,
+   "noise": "零偏不稳定性 X 2.5 / Y 3.2 / Z 3 °/h（艾伦方差）",
+   "iface": "UART(TTL)、CAN",
+   "voltage_V": 5,
+   "voltage_range_V": "3.2–5.5",
+   "power_w": 0.24,
+   "temp_range_C": "-40~85",
+   "size_mm": "22×22×10（Molex 接口）",
+   "weight_g": null,
+   "resolution": null,
+   "image_url": "/parts/hipnuc-hi12.png",
+   "image_source": "超核电子 HiPNUC HI12 产品页产品图",
+   "doc_url": "https://www.hipnuc.com/hi12.html",
+   "doc_pdf": null,
+   "repo_urls": [
+    "https://github.com/hipnuc/products"
+   ]
+  },
+  "notes": "HI12 系列含 M0/H1/H2/S2/S3；本条为 HI12M0（IMU/VRU），陀螺 ±2000 °/s、加速度计 ±24 g（可调）。H1/H2 的 Z 轴陀螺为 ±400 °/s，S2/S3 为 ±4000 °/s、加速度计 ±32 g，S3 带 AHRS 与磁力计。接口命名 MI1 = UART + CAN；UART/USB 最高 1000 Hz，CAN 最高 200 Hz。3.2–5.5 V，M0 功耗 240 mW。官网未列重量与分辨率；价格需向官方商城/销售确认。",
+  "origin": "超核电子 HiPNUC HI12 产品页 + HiPNUC/products SDK 仓库核对（2026-10-28）",
+  "search": "hipnuc 超核 hi12 hi12m0 imu ahrs 陀螺仪 加速度计 uart can 四足 机器人"
+ }
+]

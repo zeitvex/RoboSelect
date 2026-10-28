@@ -1,0 +1,50 @@
+[
+ {
+  "id": "cont-radxa-rock-5b-8gb",
+  "category": "controller_high",
+  "subtype": "sbc",
+  "vendor": "瑞莎 Radxa",
+  "vendor_cn": "瑞莎科技",
+  "model": "ROCK 5B 8GB",
+  "title": "瑞莎 Radxa ROCK 5B 8GB",
+  "url": "https://radxa.com/products/rock5/5b",
+  "source_tier": "A",
+  "verified": 1,
+  "last_checked": "2026-10-28",
+  "price_cny": 884,
+  "specs": {
+   "soc": "Rockchip RK3588",
+   "cpu": "4× Cortex-A76 @2.4GHz + 4× Cortex-A55 @1.8GHz",
+   "cores": 8,
+   "cpu_arch": "arm64",
+   "gpu": "Mali-G610 MP4",
+   "cuda_cores": null,
+   "npu_tops": 6,
+   "ram_gb": 8,
+   "ram_bw_gbs": null,
+   "storage_gb": null,
+   "power_idle_w": null,
+   "power_max_w": null,
+   "os": "Radxa OS / Debian / Ubuntu",
+   "cuda": false,
+   "ros2": true,
+   "eth": "1× 2.5GbE",
+   "usb": "2× USB 3.0 Type-A + 1× USB 2.0 Type-A + 1× USB-C (PD)",
+   "can": 0,
+   "csi": 1,
+   "pcie": "1× M.2 M-key (PCIe 3.0 x4)",
+   "size_mm": "100×72",
+   "weight_g": null,
+   "image_url": "/parts/radxa-rock-5b-8gb.webp",
+   "image_source": "Radxa 官网 ROCK 5B 产品图（thumb_rock5b.webp）",
+   "doc_url": "https://docs.radxa.com/en/rock5/rock5b",
+   "doc_pdf": null,
+   "repo_urls": [
+    "https://github.com/radxa-build/rock-5b"
+   ]
+  },
+  "notes": "8GB LPDDR4x 版。RK3588（4×A76@2.4 + 4×A55@1.8）、Mali-G610 MP4、NPU 6 TOPS、2.5GbE、M.2 M-key（PCIe 3.0 x4，支持 NVMe）、USB-C PD、40-pin 扩展口。存储需 eMMC 模块或 microSD，裸板不带。无原生 CAN，需要 CAN 请走 M.2/SPI 扩展。价格：8GB+8GB 存储渠道价约 ¥884（2025-12）；裸板随内存/存储配置浮动。",
+  "origin": "Radxa 官网产品页 + docs.radxa.com 核对（2026-10-28）",
+  "search": "radxa rock 5b 8gb rk3588"
+ }
+]
