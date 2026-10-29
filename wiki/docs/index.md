@@ -22,7 +22,7 @@ titleTemplate: false
   </section>
 
   <section class="home-stats">
-    <div><b>127</b><span>在库部件</span></div>
+    <div><b>131</b><span>在库部件</span></div>
     <div><b>11</b><span>有数据的品类 · 共 13 类</span></div>
     <div><b>97</b><span>逐项核对过厂商手册（A 级）</span></div>
     <div><b>149</b><span>加工与标准件供应商</span></div>
@@ -42,7 +42,7 @@ titleTemplate: false
 <a class="hc" href="/parts/battery/"><b>电池</b><span>待收录</span><em>待收录</em></a>
 <a class="hc" href="/parts/wiring/"><b>线束</b><span>2</span><em>待收录</em></a>
 <a class="hc" href="/parts/module/"><b>其余模块</b><span>待收录</span><em>力触觉 / 编码器</em></a>
-<a class="hc" href="/parts/chip/"><b>硬件芯片</b><span>14</span><em>MCU / 驱动 / 收发器</em></a></div>
+<a class="hc" href="/parts/chip/"><b>硬件芯片</b><span>18</span><em>MCU / 驱动 / 收发器</em></a></div>
     <p class="home-note">
       「待收录」不是漏了 —— 是没有可信来源。宁可空着，也不拿论文里的典型值充数。
     </p>
