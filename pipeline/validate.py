@@ -51,6 +51,8 @@ KNOWN_SPEC_KEYS = {
     "connector", "backlash_arcmin",
     # 芯片
     "package", "cores", "clock_mhz", "flash_kb", "ram_kb", "canfd",
+    # 资料链接（官方文档 / 手册 PDF / 开源仓库）
+    "doc_url", "doc_pdf", "repo_urls",
 }
 
 #: UI 真正会读的键。B 级行字段参差，只要求这些键存在（值可为 null），

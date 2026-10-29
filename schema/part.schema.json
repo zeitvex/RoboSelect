@@ -55,7 +55,14 @@
         "comm": { "type": ["string", "null"] },
         "ip": { "type": ["string", "null"] },
         "image_url": { "type": ["string", "null"] },
-        "image_source": { "type": ["string", "null"] }
+        "image_source": { "type": ["string", "null"] },
+        "doc_url": { "type": ["string", "null"], "description": "厂商官方文档页" },
+        "doc_pdf": { "type": ["string", "null"], "description": "官方手册 / 数据手册 PDF 直链" },
+        "repo_urls": {
+          "type": ["array", "null"],
+          "description": "相关开源仓库（官方 SDK、驱动、例程）",
+          "items": { "type": "string" }
+        }
       }
     }
   }
