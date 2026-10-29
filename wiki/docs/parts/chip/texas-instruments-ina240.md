@@ -67,6 +67,8 @@ title: Texas Instruments INA240
 | Flash (KB) | — |
 | CAN 路数 | — |
 | 电压范围 | 2.7–5.5 V |
+| doc_url | https://www.ti.com/product/INA240 |
+| doc_pdf | https://www.ti.com/lit/ds/symlink/ina240.pdf |
 
 ## 优惠与获取条件
 

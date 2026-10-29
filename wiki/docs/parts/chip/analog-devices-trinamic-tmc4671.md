@@ -68,6 +68,9 @@ title: Analog Devices (Trinamic) TMC4671
 | Flash (KB) | — |
 | CAN 路数 | — |
 | 电压范围 | 3.3–5 V 逻辑 |
+| doc_url | https://www.analog.com/en/products/tmc4671.html |
+| doc_pdf | https://www.analog.com/media/en/technical-documentation/data-sheets/TMC4671.pdf |
+| repo_urls | https://github.com/analogdevicesinc/TMC-API |
 
 ## 优惠与获取条件
 

@@ -67,6 +67,8 @@ title: Texas Instruments DRV8323S
 | Flash (KB) | — |
 | CAN 路数 | — |
 | 电压范围 | 6–60 V |
+| doc_url | https://www.ti.com/product/DRV8323 |
+| doc_pdf | https://www.ti.com/lit/ds/symlink/drv8323.pdf |
 
 ## 优惠与获取条件
 

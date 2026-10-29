@@ -67,6 +67,8 @@ title: Texas Instruments SN65HVD230
 | Flash (KB) | — |
 | CAN 路数 | — |
 | 电压范围 | 3–3.6 V |
+| doc_url | https://www.ti.com/product/SN65HVD230 |
+| doc_pdf | https://www.ti.com/lit/ds/symlink/sn65hvd230.pdf |
 
 ## 优惠与获取条件
 

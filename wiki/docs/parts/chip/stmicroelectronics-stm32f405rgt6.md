@@ -72,6 +72,9 @@ title: STMicroelectronics STM32F405RGT6
 | cores | 1 |
 | RAM (KB) | 192 |
 | CAN-FD | 0 |
+| doc_url | https://www.st.com/en/microcontrollers-microprocessors/stm32f405rg.html |
+| doc_pdf | https://www.st.com/resource/en/datasheet/stm32f405rg.pdf |
+| repo_urls | https://github.com/STMicroelectronics/STM32CubeF4 |
 
 ## 优惠与获取条件
 

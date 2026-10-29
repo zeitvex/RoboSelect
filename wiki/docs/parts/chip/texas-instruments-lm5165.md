@@ -67,6 +67,8 @@ title: Texas Instruments LM5165
 | CAN 路数 | — |
 | 电压范围 | 3–65 V 输入 |
 | power_w | 0.75 |
+| doc_url | https://www.ti.com/product/LM5165 |
+| doc_pdf | https://www.ti.com/lit/ds/symlink/lm5165.pdf |
 
 ## 优惠与获取条件
 

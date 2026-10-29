@@ -72,6 +72,9 @@ title: STMicroelectronics STM32G431CBU6
 | cores | 1 |
 | RAM (KB) | 32 |
 | CAN-FD | 1 |
+| doc_url | https://www.st.com/en/microcontrollers-microprocessors/stm32g431cb.html |
+| doc_pdf | https://www.st.com/resource/en/datasheet/stm32g431cb.pdf |
+| repo_urls | https://github.com/STMicroelectronics/STM32CubeG4 |
 
 ## 优惠与获取条件
 

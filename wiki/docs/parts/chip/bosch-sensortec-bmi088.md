@@ -70,6 +70,9 @@ title: Bosch Sensortec BMI088
 | ODR (Hz) | 1600 |
 | 陀螺量程 (°/s) | 2000 |
 | 加计量程 (g) | 24 |
+| doc_url | https://www.bosch-sensortec.com/products/motion-sensors/imus/bmi088/ |
+| doc_pdf | https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmi088-ds001.pdf |
+| repo_urls | https://github.com/boschsensortec/BMI08x_SensorAPI |
 
 ## 优惠与获取条件
 

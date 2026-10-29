@@ -70,6 +70,8 @@ title: TDK InvenSense ICM-42688-P
 | ODR (Hz) | 32000 |
 | 陀螺量程 (°/s) | 2000 |
 | 加计量程 (g) | 16 |
+| doc_url | https://invensense.tdk.com/products/motion-tracking/6-axis/icm-42688-p/ |
+| doc_pdf | https://invensense.tdk.com/wp-content/uploads/2020/04/ds-000347_icm-42688-p-datasheet.pdf |
 
 ## 优惠与获取条件
 

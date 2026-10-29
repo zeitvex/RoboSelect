@@ -72,6 +72,9 @@ title: Espressif ESP32-S3-WROOM-1
 | cores | 2 |
 | RAM (KB) | 512 |
 | CAN-FD | 0 |
+| doc_url | https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/ |
+| doc_pdf | https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf |
+| repo_urls | https://github.com/espressif/esp-idf |
 
 ## 优惠与获取条件
 

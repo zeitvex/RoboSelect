@@ -67,6 +67,7 @@ title: NXP TJA1051T/3
 | Flash (KB) | — |
 | CAN 路数 | — |
 | 电压范围 | 4.5–5.5 V（VIO 3.3 V） |
+| doc_pdf | https://www.nxp.com/docs/en/data-sheet/TJA1051.pdf |
 
 ## 优惠与获取条件
 

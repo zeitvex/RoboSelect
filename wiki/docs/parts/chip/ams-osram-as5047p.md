@@ -68,6 +68,8 @@ title: ams OSRAM AS5047P
 | Flash (KB) | — |
 | CAN 路数 | — |
 | 分辨率 (bit) | 14 |
+| doc_url | https://ams.com/as5047p |
+| doc_pdf | https://ams.com/documents/20143/36005/AS5047P_DS000324_2-00.pdf |
 
 ## 优惠与获取条件
 
