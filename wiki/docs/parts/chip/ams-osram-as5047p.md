@@ -15,7 +15,7 @@ title: ams OSRAM AS5047P
       <span class="part-tag">硬件芯片</span>
       <span class="part-tag soft">encoder</span>
       <span class="part-tag tierB">来源 B</span>
-      <span class="part-tag muted">无公开报价</span>
+      <span class="part-tag">¥35</span>
     </div>
 
 <div class="part-split">
@@ -90,7 +90,7 @@ title: ams OSRAM AS5047P
 
 ## 备注
 
-关节输出端最常用的磁编：14 位、ABI/PWM/SPI 三种输出。做力矩控制时它给的是**绝对角**，别拿它当增量编码器用。
+关节输出端最常用的磁编：14 位、ABI/PWM/SPI 三种输出。做力矩控制时它给的是**绝对角**，别拿它当增量编码器用。 价格：立创商城 item.szlcsc.com/1043057.html（AS5047P-ATSM）1+ ￥35.96，2026-10-30 采集，含税挂牌价、不含运费税费。
 
 
 

@@ -15,7 +15,7 @@ title: STMicroelectronics STM32F405RGT6
       <span class="part-tag">硬件芯片</span>
       <span class="part-tag soft">mcu</span>
       <span class="part-tag tierB">来源 B</span>
-      <span class="part-tag muted">无公开报价</span>
+      <span class="part-tag">¥42</span>
     </div>
 
 <div class="part-split">
@@ -95,7 +95,7 @@ title: STMicroelectronics STM32F405RGT6
 
 ## 备注
 
-关节驱动器里最常被拿来跑 FOC 的一颗：有 FPU、双 CAN、定时器够多。踩坑点：F405 的 CAN 是 bxCAN（不是 FDCAN），要 CAN FD 得看 G4/H7。
+关节驱动器里最常被拿来跑 FOC 的一颗：有 FPU、双 CAN、定时器够多。踩坑点：F405 的 CAN 是 bxCAN（不是 FDCAN），要 CAN FD 得看 G4/H7。 价格：立创商城 item.szlcsc.com/16424.html（STM32F405RGT6）1+ ￥42.05，2026-10-30 采集，含税挂牌价、不含运费税费。
 
 
 

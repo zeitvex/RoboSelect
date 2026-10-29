@@ -14,7 +14,7 @@ title: Espressif ESP32-S3-WROOM-1
       <span class="part-tag">硬件芯片</span>
       <span class="part-tag soft">mcu</span>
       <span class="part-tag tierB">来源 B</span>
-      <span class="part-tag muted">无公开报价</span>
+      <span class="part-tag">¥30</span>
     </div>
 
 <div class="part-split">
@@ -95,7 +95,7 @@ title: Espressif ESP32-S3-WROOM-1
 
 ## 备注
 
-适合做「调试桥 / 遥测 / 上位机」而不是实时力矩环：WiFi 栈会打断硬实时。要做关节控制，让它当下位机的通信协处理器。 产品图待补：厂商产品页为 JS 渲染，HTML 里没有图片地址，需人工提供截图
+适合做「调试桥 / 遥测 / 上位机」而不是实时力矩环：WiFi 栈会打断硬实时。要做关节控制，让它当下位机的通信协处理器。 产品图待补：厂商产品页为 JS 渲染，HTML 里没有图片地址，需人工提供截图 价格：立创商城 item.szlcsc.com/3198299.html（ESP32-S3-WROOM-1-N8R8）1+ ￥30.78，2026-10-30 采集，含税挂牌价、不含运费税费。
 
 
 

@@ -14,7 +14,7 @@ title: Texas Instruments LM5165
       <span class="part-tag">硬件芯片</span>
       <span class="part-tag soft">power</span>
       <span class="part-tag tierB">来源 B</span>
-      <span class="part-tag muted">无公开报价</span>
+      <span class="part-tag">¥26</span>
     </div>
 
 <div class="part-split">
@@ -89,7 +89,7 @@ title: Texas Instruments LM5165
 
 ## 备注
 
-把 48 V 母线降到 5 V/3.3 V 给控制板供电。电流很小，只够逻辑；驱动侧的 12 V 栅极供电要另配。 产品图待补：厂商产品页为 JS 渲染，HTML 里没有图片地址，需人工提供截图
+把 48 V 母线降到 5 V/3.3 V 给控制板供电。电流很小，只够逻辑；驱动侧的 12 V 栅极供电要另配。 产品图待补：厂商产品页为 JS 渲染，HTML 里没有图片地址，需人工提供截图 价格：立创商城 item.szlcsc.com/94187.html（LM5165DRCR）1+ ￥26.26，2026-10-30 采集，含税挂牌价、不含运费税费。
 
 
 

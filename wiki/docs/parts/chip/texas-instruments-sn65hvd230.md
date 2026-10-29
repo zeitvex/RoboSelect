@@ -14,7 +14,7 @@ title: Texas Instruments SN65HVD230
       <span class="part-tag">硬件芯片</span>
       <span class="part-tag soft">transceiver</span>
       <span class="part-tag tierB">来源 B</span>
-      <span class="part-tag muted">无公开报价</span>
+      <span class="part-tag">¥3</span>
     </div>
 
 <div class="part-split">
@@ -89,7 +89,7 @@ title: Texas Instruments SN65HVD230
 
 ## 备注
 
-3.3 V 单电源，省掉 5 V 轨。代价是共模范围与抗扰不如 5 V 器件 —— 长线束、电机旁边走线时更挑布线。 产品图待补：厂商产品页为 JS 渲染，HTML 里没有图片地址，需人工提供截图
+3.3 V 单电源，省掉 5 V 轨。代价是共模范围与抗扰不如 5 V 器件 —— 长线束、电机旁边走线时更挑布线。 产品图待补：厂商产品页为 JS 渲染，HTML 里没有图片地址，需人工提供截图 价格：立创商城 item.szlcsc.com/12661.html（SN65HVD230DR）1+ ￥3.41，2026-10-30 采集，含税挂牌价、不含运费税费。
 
 
 

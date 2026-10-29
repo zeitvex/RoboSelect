@@ -14,7 +14,7 @@ title: ams OSRAM AS5600
       <span class="part-tag">硬件芯片</span>
       <span class="part-tag soft">encoder</span>
       <span class="part-tag tierB">来源 B</span>
-      <span class="part-tag muted">无公开报价</span>
+      <span class="part-tag">¥7</span>
     </div>
 
 <div class="part-split">
@@ -90,7 +90,7 @@ title: ams OSRAM AS5600
 
 ## 备注
 
-便宜好装的 12 位磁编，输出只有 I²C / 模拟 / PWM，**没有 ABI 增量输出**；高刷新率的力矩环要注意 I²C 读取带宽能不能跟上。比 AS5047P 少一档精度，胜在便宜、外围简单。
+便宜好装的 12 位磁编，输出只有 I²C / 模拟 / PWM，**没有 ABI 增量输出**；高刷新率的力矩环要注意 I²C 读取带宽能不能跟上。比 AS5047P 少一档精度，胜在便宜、外围简单。 价格：立创商城 item.szlcsc.com/511984.html（AS5600-ASOT）1+ ￥7.51，2026-10-30 采集，含税挂牌价、不含运费税费。
 
 
 

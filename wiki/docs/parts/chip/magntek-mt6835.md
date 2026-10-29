@@ -14,7 +14,7 @@ title: MagnTek MT6835
       <span class="part-tag">硬件芯片</span>
       <span class="part-tag soft">encoder</span>
       <span class="part-tag tierB">来源 B</span>
-      <span class="part-tag muted">无公开报价</span>
+      <span class="part-tag">¥29</span>
     </div>
 
 <div class="part-split">
@@ -89,7 +89,7 @@ title: MagnTek MT6835
 
 ## 备注
 
-国产高分辨率磁编，常被拿来对标 AS5047。21 位是**内部分辨率**，实际有效位数受安装偏心与磁铁一致性限制 —— 装歪了后面几位全是噪声。 产品图待补：厂商产品页为 JS 渲染，HTML 里没有图片地址，需人工提供截图
+国产高分辨率磁编，常被拿来对标 AS5047。21 位是**内部分辨率**，实际有效位数受安装偏心与磁铁一致性限制 —— 装歪了后面几位全是噪声。 产品图待补：厂商产品页为 JS 渲染，HTML 里没有图片地址，需人工提供截图 价格：立创商城 item.szlcsc.com/3278069.html（MT6835GT-STD-R）1+ ￥29.98，2026-10-30 采集，含税挂牌价、不含运费税费。
 
 
 

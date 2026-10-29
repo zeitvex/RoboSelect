@@ -14,7 +14,7 @@ title: Winbond W25Q128JV
       <span class="part-tag">硬件芯片</span>
       <span class="part-tag soft">memory</span>
       <span class="part-tag tierB">来源 B</span>
-      <span class="part-tag muted">无公开报价</span>
+      <span class="part-tag">¥15</span>
     </div>
 
 <div class="part-split">
@@ -88,7 +88,7 @@ title: Winbond W25Q128JV
 
 ## 备注
 
-放参数标定表、故障日志、固件备份。注意它是 NOR，擦写寿命按扇区算 —— 别拿它当高频日志盘。 产品图待补：厂商产品页为 JS 渲染，HTML 里没有图片地址，需人工提供截图
+放参数标定表、故障日志、固件备份。注意它是 NOR，擦写寿命按扇区算 —— 别拿它当高频日志盘。 产品图待补：厂商产品页为 JS 渲染，HTML 里没有图片地址，需人工提供截图 价格：立创商城 item.szlcsc.com/98729.html（W25Q128JVSIQ）1+ ￥15.78，2026-10-30 采集，含税挂牌价、不含运费税费。
 
 
 

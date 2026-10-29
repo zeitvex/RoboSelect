@@ -15,7 +15,7 @@ title: STMicroelectronics STM32G431CBU6
       <span class="part-tag">硬件芯片</span>
       <span class="part-tag soft">mcu</span>
       <span class="part-tag tierB">来源 B</span>
-      <span class="part-tag muted">无公开报价</span>
+      <span class="part-tag">¥44</span>
     </div>
 
 <div class="part-split">
@@ -95,7 +95,7 @@ title: STMicroelectronics STM32G431CBU6
 
 ## 备注
 
-做 CAN FD 关节驱动的主流选择：片上 FDCAN + 数学加速器，170 MHz。RAM 只有 32 KB —— 想在里面塞完整力矩环 + 上位机协议要算清楚。
+做 CAN FD 关节驱动的主流选择：片上 FDCAN + 数学加速器，170 MHz。RAM 只有 32 KB —— 想在里面塞完整力矩环 + 上位机协议要算清楚。 价格：立创商城 item.szlcsc.com/549634.html（STM32G431CBU6）1+ ￥44.25，2026-10-30 采集，含税挂牌价、不含运费税费。
 
 
 

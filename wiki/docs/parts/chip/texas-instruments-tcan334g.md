@@ -14,7 +14,7 @@ title: Texas Instruments TCAN334G
       <span class="part-tag">硬件芯片</span>
       <span class="part-tag soft">transceiver</span>
       <span class="part-tag tierB">来源 B</span>
-      <span class="part-tag muted">无公开报价</span>
+      <span class="part-tag">¥15</span>
     </div>
 
 <div class="part-split">
@@ -89,7 +89,7 @@ title: Texas Instruments TCAN334G
 
 ## 备注
 
-3.3 V 单电源的 CAN FD 收发器，比 5 V 的 TJA1051 省掉一路 5 V 轨。共模范围 ±12 V、总线脚故障耐受 ±14 V 这一档，压在电机线边上布线要留余量。**5 Mbps 只有 G 版本支持**，买错成 TCAN334 就掉回 2 Mbps 档。
+3.3 V 单电源的 CAN FD 收发器，比 5 V 的 TJA1051 省掉一路 5 V 轨。共模范围 ±12 V、总线脚故障耐受 ±14 V 这一档，压在电机线边上布线要留余量。**5 Mbps 只有 G 版本支持**，买错成 TCAN334 就掉回 2 Mbps 档。 价格：立创商城 item.szlcsc.com/207468.html（TCAN334GDR）1+ ￥15.04，2026-10-30 采集，含税挂牌价、不含运费税费。
 
 
 

@@ -15,7 +15,7 @@ title: Analog Devices (Trinamic) TMC4671
       <span class="part-tag">硬件芯片</span>
       <span class="part-tag soft">driver</span>
       <span class="part-tag tierB">来源 B</span>
-      <span class="part-tag muted">无公开报价</span>
+      <span class="part-tag">¥242</span>
     </div>
 
 <div class="part-split">
@@ -91,7 +91,7 @@ title: Analog Devices (Trinamic) TMC4671
 
 ## 备注
 
-把 FOC 做进硬件：电流环在片内跑，MCU 只发目标值。省 MCU 算力，但也意味着控制带宽和环路形态被芯片定死 —— 做科研级力矩控制会受限。
+把 FOC 做进硬件：电流环在片内跑，MCU 只发目标值。省 MCU 算力，但也意味着控制带宽和环路形态被芯片定死 —— 做科研级力矩控制会受限。 价格：立创商城 item.szlcsc.com/471345.html（TMC4671-LA）1+ ￥242.46，2026-10-30 采集，含税挂牌价、不含运费税费。 料号 TMC4671-LA 实际封装为 QFN-76-EP(6.5×10.5)，本条 specs 里的 QFN-32 待订正。
 
 
 

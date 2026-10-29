@@ -14,7 +14,7 @@ title: Analog Devices (Trinamic) TMC2209
       <span class="part-tag">硬件芯片</span>
       <span class="part-tag soft">driver</span>
       <span class="part-tag tierB">来源 B</span>
-      <span class="part-tag muted">无公开报价</span>
+      <span class="part-tag">¥17</span>
     </div>
 
 <div class="part-split">
@@ -90,7 +90,7 @@ title: Analog Devices (Trinamic) TMC2209
 
 ## 备注
 
-两相步进的小体积方案：单线 UART 配置参数，STEP/DIR 就能跑，StallGuard4 可做无传感器堵转检测。档位是 4.75–29 V / 2 A RMS，48 V 母线的小型关节用不了，别拿它顶 DRV8323 的活。
+两相步进的小体积方案：单线 UART 配置参数，STEP/DIR 就能跑，StallGuard4 可做无传感器堵转检测。档位是 4.75–29 V / 2 A RMS，48 V 母线的小型关节用不了，别拿它顶 DRV8323 的活。 价格：立创商城 item.szlcsc.com/2242757.html（TMC2209-LA-T）1+ ￥17.26，2026-10-30 采集，含税挂牌价、不含运费税费。
 
 
 

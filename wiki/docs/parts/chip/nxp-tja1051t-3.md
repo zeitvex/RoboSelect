@@ -14,7 +14,7 @@ title: NXP TJA1051T/3
       <span class="part-tag">硬件芯片</span>
       <span class="part-tag soft">transceiver</span>
       <span class="part-tag tierB">来源 B</span>
-      <span class="part-tag muted">无公开报价</span>
+      <span class="part-tag">¥3</span>
     </div>
 
 <div class="part-split">
@@ -88,7 +88,7 @@ title: NXP TJA1051T/3
 
 ## 备注
 
-5 V 供电、3.3 V 逻辑侧，可直接接 STM32。做四足总线时注意终端电阻只在两端各 120 Ω，中间节点别乱加。 产品图待补：厂商产品页为 JS 渲染，HTML 里没有图片地址，需人工提供截图
+5 V 供电、3.3 V 逻辑侧，可直接接 STM32。做四足总线时注意终端电阻只在两端各 120 Ω，中间节点别乱加。 产品图待补：厂商产品页为 JS 渲染，HTML 里没有图片地址，需人工提供截图 价格：立创商城 item.szlcsc.com/39678.html（TJA1051T/3/1J）1+ ￥3.54，2026-10-30 采集，含税挂牌价、不含运费税费。
 
 
 

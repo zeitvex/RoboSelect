@@ -15,7 +15,7 @@ title: Bosch Sensortec BMI088
       <span class="part-tag">硬件芯片</span>
       <span class="part-tag soft">imu</span>
       <span class="part-tag tierB">来源 B</span>
-      <span class="part-tag muted">无公开报价</span>
+      <span class="part-tag">¥40</span>
     </div>
 
 <div class="part-split">
@@ -93,7 +93,7 @@ title: Bosch Sensortec BMI088
 
 ## 备注
 
-四足上很常见：抗振比消费级 IMU 好，因为它是两颗独立 die。注意它的加速度计量程与带宽要在初始化里显式配，默认值往往不适合高频触地。
+四足上很常见：抗振比消费级 IMU 好，因为它是两颗独立 die。注意它的加速度计量程与带宽要在初始化里显式配，默认值往往不适合高频触地。 价格：立创商城 item.szlcsc.com/239391.html（BMI088）1+ ￥40.5，2026-10-30 采集，含税挂牌价、不含运费税费。
 
 
 

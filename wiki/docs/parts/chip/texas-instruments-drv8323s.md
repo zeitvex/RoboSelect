@@ -14,7 +14,7 @@ title: Texas Instruments DRV8323S
       <span class="part-tag">硬件芯片</span>
       <span class="part-tag soft">driver</span>
       <span class="part-tag tierB">来源 B</span>
-      <span class="part-tag muted">无公开报价</span>
+      <span class="part-tag">¥25</span>
     </div>
 
 <div class="part-split">
@@ -89,7 +89,7 @@ title: Texas Instruments DRV8323S
 
 ## 备注
 
-关节驱动板最常见的栅极驱动：内置三路电流放大器 + SPI 可配增益，省掉外部运放。注意它是**驱动器**不是控制器，FOC 还得由 MCU 算。 产品图待补：厂商产品页为 JS 渲染，HTML 里没有图片地址，需人工提供截图
+关节驱动板最常见的栅极驱动：内置三路电流放大器 + SPI 可配增益，省掉外部运放。注意它是**驱动器**不是控制器，FOC 还得由 MCU 算。 产品图待补：厂商产品页为 JS 渲染，HTML 里没有图片地址，需人工提供截图 价格：立创商城 item.szlcsc.com/736860.html（DRV8323SRTAR）1+ ￥25.26，2026-10-30 采集，含税挂牌价、不含运费税费。
 
 
 

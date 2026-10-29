@@ -14,7 +14,7 @@ title: STMicroelectronics STM32H723ZGT6
       <span class="part-tag">硬件芯片</span>
       <span class="part-tag soft">mcu</span>
       <span class="part-tag tierB">来源 B</span>
-      <span class="part-tag muted">无公开报价</span>
+      <span class="part-tag">¥71</span>
     </div>
 
 <div class="part-split">
@@ -94,7 +94,7 @@ title: STMicroelectronics STM32H723ZGT6
 
 ## 备注
 
-算力和 RAM 都比 F4/G4 宽裕得多：550 MHz + 564 KB，跑完整力矩环 + 上位机协议不用抠内存。3 路 CAN FD（1× FD/TTCAN + 2× FDCAN）够双关节加上位机。踩坑点：H7 的供电时序、VOS 分档和时钟树比 F4 挑剔，LQFP144 的封装也不适合小驱动板。
+算力和 RAM 都比 F4/G4 宽裕得多：550 MHz + 564 KB，跑完整力矩环 + 上位机协议不用抠内存。3 路 CAN FD（1× FD/TTCAN + 2× FDCAN）够双关节加上位机。踩坑点：H7 的供电时序、VOS 分档和时钟树比 F4 挑剔，LQFP144 的封装也不适合小驱动板。 价格：立创商城 item.szlcsc.com/778101.html（STM32H723ZGT6）1+ ￥71.95，2026-10-30 采集，含税挂牌价、不含运费税费。
 
 
 
